@@ -22,7 +22,8 @@ client.on('message', msg => {
        msg.reply('me too they suck they ruin all the fun')
       } else if (msg.content === 'uoilac' ) {
         msg.reply('washington aaaaaaaaaaaaaaaaaa')
-     
+     } else if (msg.content === 'i love raiders' ) {
+        msg.reply('why doe')
 
 
 
