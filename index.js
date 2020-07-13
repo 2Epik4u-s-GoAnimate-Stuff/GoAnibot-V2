@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  if (msg.content === '@2Epik4u') {
+  if (msg.content === '<@353615061169995779>') {
     msg.reply('im sad bc you ping 2epik4u pls dont ping him again https://tenor.com/view/cute-cat-cry-three-sad-gif-15849691')
   } else if (msg.content === 'importing' ) {
     msg.reply('never')
