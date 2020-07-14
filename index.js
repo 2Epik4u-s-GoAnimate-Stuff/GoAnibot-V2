@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', msg => {
  if (msg.content.includes('importing')) {
-  msg.reply('fuck you');
+  msg.reply('never lol just edit it in dummy');
 
   
   } else if (msg.content === 'importingg' ) {
