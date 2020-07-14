@@ -12,14 +12,14 @@ client.on("ready", () =>{
     });
  });
 
-   
+   if userPermissions: ['MANAGE_MESSAGES']
   client.on('message', message => {
-    if userPermissions: ['MANAGE_MESSAGES']
-       (message.content.startsWith("||say ")) {
+        (message.content.startsWith("||say ")) {
       message.delete(1); //Supposed to delete message
       message.channel.send(message.content.slice(5, message.content.length));
    }
 });
+
 client.on('message', msg => {
  if (msg.content.includes('importing')) {
   msg.reply('never lol just edit it in dummy');
