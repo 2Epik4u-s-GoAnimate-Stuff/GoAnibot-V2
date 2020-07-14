@@ -12,8 +12,8 @@ client.on('message', msg => {
    
 client.on('message', msg => {
  if (msg.content.includes('http://leakthefuckinglinkonemoretimeidareyou.eu-4.evennode.com')) {
-   msg.reply('hey dont do that');
-  msg.delete();
+   msg.reply('Please dont expose the link or else raids will happen');
+
 
    
    
