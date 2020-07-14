@@ -25,7 +25,9 @@ client.on('message', msg => {
      
 } else if (msg.content.includes('<@628607192806981632>')) {
   msg.reply('Did you just fricken ping me. Thats it! you are grounded grounded grounded FOREVER.');
-    } else if (msg.content.includes('<@353615061169995779>')) {
+    
+
+   if (message.author.bot) return (msg.content.includes('<@353615061169995779>')) {
   msg.reply('Please dont ping 2Epik4u! hes probably busy masterbating with all the porn on Wrapper Online');
   
   } else if (msg.content.includes('Can 2Epik4u be grounded')) {
