@@ -30,8 +30,8 @@ client.on('message', msg => {
         msg.reply('washington aaaaaaaaaaaaaaaaaa')
      } else if (msg.content === 'i love raiders' ) {
         msg.reply('why doe')
-    } else if (msg.content === 'MJ: Online' ) {
-        msg.reply('yes. that is a great meme :)')
+    } else if (msg.content === 'MJ Online' ) {
+        msg.reply('yes, but epik denies it...')
 
 
 }
