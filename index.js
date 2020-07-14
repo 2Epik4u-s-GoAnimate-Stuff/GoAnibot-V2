@@ -6,9 +6,11 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  if (msg.content === '@2Epik4u') {
+ if(message.content.includes('importing')) {
+  msg.reply('never')
+
     msg.reply('im sad bc you ping 2epik4u pls dont ping him again https://tenor.com/view/cute-cat-cry-three-sad-gif-15849691')
-  } else if (msg.content === 'importing' ) {
+  } else if (msg.content === 'importingg' ) {
     msg.reply('never')
 } else if (msg.content === 'sign up' ) {
     msg.reply('when i learn php')
