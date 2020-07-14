@@ -9,8 +9,8 @@ client.on('message', msg => {
  if (msg.content.includes('importing')) {
   msg.reply('never lol just edit it in dummy');
    
-   client.on('message', msg => {
- if (msg.content.includes('<@bot.user.id>')) {
+
+} else if (msg.content.includes('<@bot.user.id>')) {
   msg.reply('Did you just fricken ping me. Thats it! you are grounded grounded grounded FOREVER.');
 
   
