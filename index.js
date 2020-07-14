@@ -10,6 +10,8 @@ client.on('message', msg => {
   msg.reply('never lol just edit it in dummy');
    
 
+} else if (msg.content.includes('${client.user.tag}')) {
+  msg.reply('Did you just fricken ping me. Thats it! you are grounded grounded grounded FOREVER.');
 
   
   } else if (msg.content === 'importingg' ) {
@@ -24,11 +26,12 @@ client.on('message', msg => {
       msg.reply('no u')
     } else if (msg.content === 'i hate raiders' ) {
        msg.reply('me too they suck they ruin all the fun')
-      } else if (msg.content === 'uoilac' ) {
+      } else if (msg.content === 'uoillac' ) {
         msg.reply('washington aaaaaaaaaaaaaaaaaa')
      } else if (msg.content === 'i love raiders' ) {
         msg.reply('why doe')
-
+    } else if (msg.content === 'MJ: Online' ) {
+        msg.reply('yes. that is a great meme :)')
 
 
 }
