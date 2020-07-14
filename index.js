@@ -10,7 +10,7 @@ client.on('message', msg => {
   msg.reply('never lol just edit it in dummy');
    
 
-} else if (msg.content.includes('@Wrapper Online Bot')) {
+} else if (msg.content.includes('<@628607192806981632>')) {
   msg.reply('Did you just fricken ping me. Thats it! you are grounded grounded grounded FOREVER.');
 
   
@@ -32,7 +32,8 @@ client.on('message', msg => {
         msg.reply('why doe')
     } else if (msg.content === 'MJ Online' ) {
         msg.reply('yes, but epik denies it...')
-
+     } else if (msg.content === 'can mj be grounded' ) {
+        msg.reply('how dare you want MJ to be grunses thats it you are grounded until hell freezes over now go to washington aaaaaaaaaaaa')
 
 }
 });
