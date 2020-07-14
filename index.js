@@ -17,6 +17,8 @@ client.on('message', msg => {
   client.on('message', msg => {
  if (msg.content.includes('sign up')) {
   msg.reply('when i learn php yes or get another developer');
+   
+   
    client.on('message', msg => {
  if (msg.content.includes('patched')) {
   msg.reply('Wrapper Online isnt patched.');
