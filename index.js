@@ -14,7 +14,8 @@ client.on("ready", () =>{
 
    
   client.on('message', message => {
-   if (message.content.startsWith("||say ")) {
+    if userPermissions: ['MANAGE_MESSAGES']
+       (message.content.startsWith("||say ")) {
       message.delete(1); //Supposed to delete message
       message.channel.send(message.content.slice(5, message.content.length));
    }
