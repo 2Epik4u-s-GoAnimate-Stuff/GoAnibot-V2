@@ -10,8 +10,6 @@ client.on('message', msg => {
   msg.reply('never lol just edit it in dummy');
    
 
-} else if (msg.content.includes('${client.user.tag})) {
-  msg.reply('Did you just fricken ping me. Thats it! you are grounded grounded grounded FOREVER.');
 
   
   } else if (msg.content === 'importingg' ) {
