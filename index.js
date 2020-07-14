@@ -15,7 +15,7 @@ client.on("ready", () =>{
    
   client.on('message', message => {
    if (message.content.startsWith("||say ")) {
-      message.delete(0000); //Supposed to delete message
+      message.delete(1); //Supposed to delete message
       message.channel.send(message.content.slice(5, message.content.length));
    }
 });
