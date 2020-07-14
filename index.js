@@ -15,6 +15,13 @@ client.on('message', msg => {
  if (msg.content.includes('importing')) {
   msg.reply('never lol just edit it in dummy');
    
+     
+  client.on('message', message => {
+   if (message.content.startsWith("Wrappersay ")) { // if the message starts with wrappersay
+      message.delete(1000); //first it deletes the command that was sent
+      message.channel.send(message.content.slice(5, message.content.length)); // then it Sends the message
+   }
+});
 
 } else if (msg.content.includes('<@628607192806981632>')) {
   msg.reply('Did you just fricken ping me. Thats it! you are grounded grounded grounded FOREVER.');
