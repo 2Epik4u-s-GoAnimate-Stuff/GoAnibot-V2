@@ -11,11 +11,9 @@ client.on("ready", () =>{
         }
     });
  });
-client.on('message', msg => {
- if (msg.content.includes('importing')) {
-  msg.reply('never lol just edit it in dummy');
+
      
-     else if ('message', message => {
+     client.on('message', message => {
    if (message.content.startsWith("wrappersay ")) {
       message.delete(1000); //Supposed to delete message
       message.channel.send(message.content.slice(5, message.content.length));
@@ -25,6 +23,9 @@ client.on('message', msg => {
 
 } else if (msg.content.includes('<@628607192806981632>')) {
   msg.reply('Did you just fricken ping me. Thats it! you are grounded grounded grounded FOREVER.');
+   } else if ('message', msg => {
+ if (msg.content.includes('importing')) {
+  msg.reply('never lol just edit it in dummy');
   
   } else if (msg.content.includes('Can 2Epik4u be grounded')) {
   msg.reply('no because hes my dad and hes god :rage:');
