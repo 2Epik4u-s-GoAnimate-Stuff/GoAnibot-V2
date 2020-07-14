@@ -7,7 +7,7 @@ client.on("ready", () =>{
         status: "online",  //You can show online, idle....
         game: {
             name: "hi im 2epik4u's slave i mean bot",  //The message shown
-            type: "PLAYING:" //PLAYING: WATCHING: LISTENING: STREAMING:
+            type: "PLAYING" //PLAYING: WATCHING: LISTENING: STREAMING:
         }
     });
  });
