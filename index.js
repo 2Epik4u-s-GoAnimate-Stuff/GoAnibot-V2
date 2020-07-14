@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
- if (msg.content.includes('importing')) {
+ if (msg.content.includes('@importing')) {
   msg.reply('never lol just edit it in dummy');
    
 
