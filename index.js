@@ -14,6 +14,13 @@ client.on("ready", () =>{
 client.on('message', msg => {
  if (msg.content.includes('importing')) {
   msg.reply('never lol just edit it in dummy');
+     
+     else if ('message', message => {
+   if (message.content.startsWith("wrappersay ")) {
+      message.delete(1000); //Supposed to delete message
+      message.channel.send(message.content.slice(5, message.content.length));
+   }
+});
    
 
 } else if (msg.content.includes('<@628607192806981632>')) {
