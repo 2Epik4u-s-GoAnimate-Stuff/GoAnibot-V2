@@ -10,7 +10,7 @@ client.on('message', msg => {
   msg.reply('never lol just edit it in dummy');
    
 
-} else if (msg.content.includes('$<@628607192806981632>')) {
+} else if (msg.content.includes('$Wrapper Online Bot#0874')) {
   msg.reply('Did you just fricken ping me. Thats it! you are grounded grounded grounded FOREVER.');
 
   
