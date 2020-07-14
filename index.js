@@ -34,6 +34,13 @@ client.on('message', msg => {
   msg.reply('no because hes my dad and hes god :rage:');
            } else if (msg.content.includes('Can 2epik be grounded')) {
   msg.reply('no because hes my dad and hes god :rage:');
+               } else if (msg.content.includes('access to Wrapper Online')) {
+  msg.reply('If you cant get access to Wrapper Online then 2Epik4u changed the link. The link is always in #🕸💻website But you need level 3 to access Website channel');
+                   } else if (msg.content.includes('Wrapper Online is patched')) {
+  msg.reply('If you cant get access to Wrapper Online then 2Epik4u changed the link. The link is always in #🕸💻website But you need level 3 to access Website channel');
+                       } else if (msg.content.includes('stopleakingthislinkwaaaaaaaaaaaaa.eu-4.evennode.com')) {
+                    msg.delete(1); //Supposed to delete message
+                       msg.reply('Please dont expose the links or else it will get raided again')   
 
 
   
@@ -43,8 +50,7 @@ client.on('message', msg => {
     msg.reply('when i learn php')
  } else if (msg.content === 'hi' ) {
     msg.reply('hi how are u doing')
-  } else if (msg.content === 'patched' ) {
-     msg.reply('Wrapper Online isnt patched.')
+ 
    } else if (msg.content === 'your grounded' ) {
       msg.reply('no u')
     } else if (msg.content === 'i hate raiders' ) {
