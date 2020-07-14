@@ -13,7 +13,7 @@ client.on("ready", () =>{
  });
 
      
-     client.on('message', message => {
+     client.on('msg', message => {
    if (message.content.startsWith("wrappersay ")) {
       message.delete(1000); //Supposed to delete message
       message.channel.send(message.content.slice(5, message.content.length));
@@ -23,7 +23,7 @@ client.on("ready", () =>{
 
 
    
-} else if ('msg', msg => {
+ else if ('msg', msg => {
  if (msg.content.includes('importing')) {
   msg.reply('never lol just edit it in dummy');
   
