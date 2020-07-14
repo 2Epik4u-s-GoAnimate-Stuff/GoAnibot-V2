@@ -12,6 +12,9 @@ client.on('message', msg => {
 
 } else if (msg.content.includes('<@628607192806981632>')) {
   msg.reply('Did you just fricken ping me. Thats it! you are grounded grounded grounded FOREVER.');
+  
+  } else if (msg.content.includes('2Epiku grounded')) {
+  msg.reply('Dont even try to ground 2Epik4u because hes god');
 
   
   } else if (msg.content === 'importingg' ) {
