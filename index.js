@@ -21,9 +21,9 @@ client.on("ready", () =>{
 });
    
 
-} else if (msg.content.includes('<@628607192806981632>')) {
-  msg.reply('Did you just fricken ping me. Thats it! you are grounded grounded grounded FOREVER.');
-   } else if ('message', msg => {
+
+   
+} else if ('msg', msg => {
  if (msg.content.includes('importing')) {
   msg.reply('never lol just edit it in dummy');
   
