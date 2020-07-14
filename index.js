@@ -8,7 +8,14 @@ client.on('ready', () => {
 client.on('message', msg => {
  if (msg.content.includes('importing')) {
   msg.reply('never lol just edit it in dummy');
+   
+   
+client.on('message', msg => {
+ if (msg.content.includes('http://leakthefuckinglinkonemoretimeidareyou.eu-4.evennode.com')) {
+  msg.delete();
 
+   
+   
   
   } else if (msg.content === 'importingg' ) {
     msg.reply('never')
