@@ -16,7 +16,7 @@ client.on("ready", () =>{
      
   client.on('message', message => {
    if (message.content.startsWith("wrappersay")) { // if the message starts with wrappersay
-      message.delete(1000); //first it deletes the command that was sent
+      message.delete(000); //first it deletes the command that was sent
       message.channel.send(message.content.slice(5, message.content.length)); // then it Sends the message
    }
 });
