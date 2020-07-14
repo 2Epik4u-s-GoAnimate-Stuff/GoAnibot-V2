@@ -14,7 +14,7 @@ client.on('message', msg => {
   msg.reply('Did you just fricken ping me. Thats it! you are grounded grounded grounded FOREVER.');
   
   } else if (msg.content.includes('Can 2Epik4u be grounded')) {
-  msg.reply('no because hes my dad and hes god :rage:');
+  msg('no because hes my dad and hes god :rage:');
 
   
   } else if (msg.content === 'importingg' ) {
