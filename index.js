@@ -52,6 +52,10 @@ client.on('message', msg => {
 		msg.reply("heres MJ dancing for no reason lol.", { files: ["./images/mj.gif"] });
 
 	}
+	if (msg.content.includes('||hiddencake')) {
+		msg.reply("You Found the hidden cake! Good job!", { files: ["./images/cake.png"] });
+
+	}
 
 	
 
