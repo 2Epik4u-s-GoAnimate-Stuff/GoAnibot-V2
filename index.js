@@ -52,7 +52,7 @@ client.on('message', message => {
 		}
 	  // Otherwise, if no user was mentioned
 	  } else {
-		message.reply('You didn\'t mention the user to ground!');
+		message.reply('who ar u groundin???');
 	  }
 	}
   });
