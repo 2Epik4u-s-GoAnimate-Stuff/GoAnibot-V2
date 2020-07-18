@@ -88,6 +88,10 @@ client.on('message', msg => {
 		msg.reply("You Found the hidden cake! Good job!", { files: ["./images/cake.png"] });
 
 	}
+	if (msg.content.includes('|cyandanc')) {
+		msg.reply("CyanAnimate Dancing!", { files: ["./images/cyan.gif"] });
+
+	}
 
 	
 
