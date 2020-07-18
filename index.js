@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+
 client.on("ready", () =>{
 	console.log(`Logged in as ${client.user.tag}!`);
 	client.user.setPresence({
@@ -14,7 +15,9 @@ client.on("ready", () =>{
 
 // make bot say a thing
   client.on('message', message => {
-   if (message.content.startsWith("||say ")) {
+	  if (!message.member.hasPermission(["KICK_MEMBERS", "ADMINISTRATOR"])) return //admin only
+	
+	  if (message.content.startsWith("||say ")) { //prefix
       message.delete(1); //Supposed to delete message
       message.channel.send(message.content.slice(5, message.content.length));
    }
@@ -27,7 +30,7 @@ client.on('message', msg => {
 		msg.reply('Did you just fricken ping me. Thats it! you are grounded grounded grounded FOREVER.');
 	}
 
-	// can epik be grounded respones
+	// includes responds
 	if (msg.content.includes('Can 2Epik4u be grounded')) {
 		msg.reply('no because hes my dad and hes god :rage:');
 	} 
@@ -39,6 +42,11 @@ client.on('message', msg => {
 	}
 	if (msg.content.includes('Can 2epik be grounded')) {
 		msg.reply('no because hes my dad and hes god :rage:');
+	}
+
+	if (msg.content.includes('||dance')) {
+		msg.reply("heres 2Epik4u dancing for no reason lol.", { files: ["./images/epikdance.gif"] });
+
 	}
 
 	
@@ -53,6 +61,7 @@ client.on('message', msg => {
 		msg.reply('washington aaaaaaaaaaaaaaaaaa')
 	}
 
+
 });
 // bot token login
-client.login('NjI4NjA3MTkyODA2OTgxNjMy.XxJHEw.vrbaGh6ITL8qivl8VWoSqeBXA2g');
+client.login('NzA0NTUxMDU3Njk0MzkyNDAx.XxKGZQ.yXNVDd0_jQeF7m9Snri3ujZFKx8');
