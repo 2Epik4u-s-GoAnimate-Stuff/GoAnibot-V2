@@ -44,10 +44,16 @@ client.on('message', msg => {
 		msg.reply('no because hes my dad and hes god :rage:');
 	}
 
-	if (msg.content.includes('||dance')) {
+	if (msg.content.includes('||epikdance')) {
 		msg.reply("heres 2Epik4u dancing for no reason lol.", { files: ["./images/epikdance.gif"] });
 
 	}
+	if (msg.content.includes('||mjdance')) {
+		msg.reply("heres MJ dancing for no reason lol.", { files: ["./images/mj.gif"] });
+
+	}
+
+	
 
 	
 	
