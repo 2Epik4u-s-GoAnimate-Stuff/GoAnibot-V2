@@ -14,6 +14,91 @@ client.on("ready", () =>{
 			}
 	});
 });
+
+
+
+
+//testing cake
+client.on('message', message => {
+	// If the message is "||help"
+	if (message.content === '|hiddencake') {
+
+	  const embed = new RichEmbed()
+	  
+		.setTitle('You found the hidden cake!')
+		.attachFiles(['https://2epik4u.github.io/Wrapper-Online-Bot/images/cake.png'])
+		.setDescription('actually you didnt find it but whatever')
+		// Set the color of the embed
+		.setColor(0x0092b0)
+		// Set the main content of the embed
+
+	  // Send the embed to the same channel as the message
+	  message.channel.send(embed);
+	}
+  })
+
+  //epik dancing
+  client.on('message', message => {
+	// If the message is "||help"
+	if (message.content === '|epikdance') {
+
+	  const embed = new RichEmbed()
+	  
+		.setTitle('Here is 2Epik4u Dancing!')
+		.attachFiles(['https://2epik4u.github.io/Wrapper-Online-Bot/images/epikdance.gif'])
+		.setDescription('hes so hot')
+		
+		// Set the color of the embed
+		.setColor(0x1653C1)
+		// Set the main content of the embed
+
+	  // Send the embed to the same channel as the message
+	  message.channel.send(embed);
+	}
+  })
+
+
+//mj dancing angry
+client.on('message', message => {
+	// If the message is "||help"
+	if (message.content === '|mjdance') {
+
+	  const embed = new RichEmbed()
+	  
+		.setTitle('Woah is that MJ the spirit dancing')
+		.attachFiles(['https://2epik4u.github.io/Wrapper-Online-Bot/images/mj.gif'])
+		.setDescription('wait... why is he mad?')
+		// Set the color of the embed
+		.setColor(0xFC8C06)
+		// Set the main content of the embed
+
+	  // Send the embed to the same channel as the message
+	  message.channel.send(embed);
+	}
+  })
+
+
+
+  //cyan dance
+  client.on('message', message => {
+	// If the message is "||help"
+	if (message.content === '|cyandance') {
+
+	  const embed = new RichEmbed()
+	  
+		.setTitle('CyanAnimate dancing very nice')
+		.attachFiles(['https://2epik4u.github.io/Wrapper-Online-Bot/images/cyan.gif'])
+		.setDescription('~~ew cyananimate~~')
+		// Set the color of the embed
+		.setColor(0xFC8C06)
+		// Set the main content of the embed
+
+	  // Send the embed to the same channel as the message
+	  message.channel.send(embed);
+	}
+  })
+
+
 //ground cmd
 client.on('message', message => {
 	// Ignore messages that aren't from a guild
@@ -52,7 +137,7 @@ client.on('message', message => {
 		}
 	  // Otherwise, if no user was mentioned
 	  } else {
-		message.reply('You didn\'t mention the user to ground!');
+		message.reply('who ar u groundin???');
 	  }
 	}
   });
@@ -88,7 +173,7 @@ client.on('message', message => {
 			// An error happened
 			// This is generally due to the bot not being able to kick the member,
 			// either due to missing permissions or role hierarchy
-			message.reply('I was unable to ground the member');
+			message.reply('srry but i cant ground him he has som hax or somethin');
 			// Log the error
 			console.error(err);
 		  });
@@ -98,7 +183,7 @@ client.on('message', message => {
 		}
 	  // Otherwise, if no user was mentioned
 	  } else {
-		message.reply('You didn\'t mention the user to ground!');
+		message.reply('who ar u ungrunsis');
 	  }
 	}
   });
@@ -116,7 +201,7 @@ client.on('message', message => {
 		// Set the color of the embed
 		.setColor(0xFF0000)
 		// Set the main content of the embed
-		.setDescription('|mjdance       |epikdance         |hiddencake     |avatar |say [ADMIN ONLY]    |ground  |unground');
+		.setDescription('|mjdance       |epikdance         |hiddencake   |cyandance    |avatar |say [ADMIN ONLY]    |ground  |unground');
 	  // Send the embed to the same channel as the message
 	  message.channel.send(embed);
 	}
@@ -165,22 +250,8 @@ client.on('message', msg => {
 		msg.reply('no because hes my dad and hes god :rage:');
 	}
 
-	if (msg.content.includes('|epikdance')) {
-		msg.reply("heres 2Epik4u dancing for no reason lol.", { files: ["./images/epikdance.gif"] });
 
-	}
-	if (msg.content.includes('|mjdance')) {
-		msg.reply("heres MJ dancing for no reason lol.", { files: ["./images/mj.gif"] });
-
-	}
-	if (msg.content.includes('|hiddencake')) {
-		msg.reply("You Found the hidden cake! Good job!", { files: ["./images/cake.png"] });
-
-	}
-	if (msg.content.includes('|cyandanc')) {
-		msg.reply("CyanAnimate Dancing!", { files: ["./images/cyan.gif"] });
-
-	}
+	
 
 	
 
@@ -196,6 +267,9 @@ client.on('message', msg => {
 		msg.reply('washington aaaaaaaaaaaaaaaaaa')
 	}
 
+	if (msg.content === '|shutup' ) {
+		msg.reply('no')
+	}
 
 
 	
