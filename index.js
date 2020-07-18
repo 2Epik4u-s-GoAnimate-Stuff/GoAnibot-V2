@@ -88,7 +88,7 @@ client.on('message', message => {
 			// An error happened
 			// This is generally due to the bot not being able to kick the member,
 			// either due to missing permissions or role hierarchy
-			message.reply('I was unable to ground the member');
+			message.reply('srry but i cant ground him he has som hax or somethin');
 			// Log the error
 			console.error(err);
 		  });
@@ -98,7 +98,7 @@ client.on('message', message => {
 		}
 	  // Otherwise, if no user was mentioned
 	  } else {
-		message.reply('You didn\'t mention the user to ground!');
+		message.reply('who ar u ungrunsis');
 	  }
 	}
   });
