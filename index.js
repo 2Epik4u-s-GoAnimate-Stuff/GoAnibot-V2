@@ -76,7 +76,7 @@ client.on('message', msg => {
 
 	//embed messages
 	bot.on('message', message=>{
-		let args = message.content.substring(PREFIX.length).split(" ")
+		let args = message.content.slice(prefix.length).split(' ');
 
 		switch(args[0]){
 			case 'embed':
