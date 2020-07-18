@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const prefix =  '||'
 
 
 client.on("ready", () =>{
@@ -71,6 +72,22 @@ client.on('message', msg => {
 		msg.reply('washington aaaaaaaaaaaaaaaaaa')
 	}
 
+
+
+	//embed messages
+	bot.on('message', message=>{
+		let args = message.content.substring(PREFIX.length).split(" ")
+
+		switch(args[0]){
+			case 'embed':
+				const embed = new Discord.RichEmbed()
+				.setTitle('Commands For 2Epik4us Sick bot')
+				.setDescription('||mjdance [Makes mj do a epic dance] ||epikdance [makes 2epik4u have epik dance moves] ||hiddencake [hidden cake!] ||say [Makes the bot say something]');
+				
+				
+
+			
+	}
 
 });
 // bot token login
