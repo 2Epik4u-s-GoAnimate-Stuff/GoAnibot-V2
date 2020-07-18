@@ -15,18 +15,24 @@ client.on("ready", () =>{
 });
 
 //discord help command
-client.on("message", message => {
-    if(message.author.bot) return;
-    if(message.channel.type === "dm") return;
-
-    let messageArray = message.content.split(" ");
-    let command = messageArray[0];
-    let args = messageArray.slice(1);
-
-   if(!command.startsWith(prefix)) return;
-
-});
-
+client.on('message', message => {
+	// If the message is "how to embed"
+	if (message.content === 'how to embed') {
+	  // We can create embeds using the MessageEmbed constructor
+	  // Read more about all that you can do with the constructor
+	  // over at https://discord.js.org/#/docs/main/stable/class/RichEmbed
+	  const embed = new RichEmbed()
+		// Set the title of the field
+		.setTitle('A slick little embed')
+		// Set the color of the embed
+		.setColor(0xFF0000)
+		// Set the main content of the embed
+		.setDescription('Hello, this is a slick embed!');
+	  // Send the embed to the same channel as the message
+	  message.channel.send(embed);
+	}
+  });
+  
 
 
 
