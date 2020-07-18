@@ -74,21 +74,7 @@ client.on('message', msg => {
 
 
 
-	//embed messages
-	bot.on('message', message=>{
-		let args = message.content.slice(prefix.length).split(' ');
-
-		switch(args[0]){
-			case 'embed':
-				const embed = new Discord.RichEmbed()
-				.setTitle('Commands For 2Epik4us Sick bot')
-				.setDescription('||mjdance [Makes mj do a epic dance] ||epikdance [makes 2epik4u have epik dance moves] ||hiddencake [hidden cake!] ||say [Makes the bot say something]');
-				
-				
-
-			
-	}
-
+	
 });
 // bot token login
 client.login('NjI4NjA3MTkyODA2OTgxNjMy.XxKUOg.V11g5X6PCzrUNJ9rBXvWQv2CahI');
