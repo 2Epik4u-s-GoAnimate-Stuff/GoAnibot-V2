@@ -17,7 +17,7 @@ client.on("ready", () =>{
   client.on("message", async message => {
     if (message.author.bot) return;
     if (!message.member.hasPermission(["KICK_MEMBERS", "ADMINISTRATOR"])) 
-	 return await msg.reply("Hey ! Dont try to make me say that !")
+	return awai message.channel.send ("Hey ! Dont try to make me say that !")
     if (message.content.startsWith("||say ")) { // prefix
         message.delete(1); // Supposed to delete message
         message.channel.send(message.content.slice(5, message.content.length));
