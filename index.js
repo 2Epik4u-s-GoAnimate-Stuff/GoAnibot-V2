@@ -55,4 +55,4 @@ client.on('message', msg => {
 
 });
 // bot token login
-client.login('NzA0NTUxMDU3Njk0MzkyNDAx.Xw0woQ.BAFuuMUpQu0kvuTE0MqITUm1sng');
+client.login('NjI4NjA3MTkyODA2OTgxNjMy.XxJHEw.vrbaGh6ITL8qivl8VWoSqeBXA2g');
