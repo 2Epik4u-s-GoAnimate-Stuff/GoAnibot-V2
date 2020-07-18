@@ -1,6 +1,7 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
-const prefix =  '||'
+const { Client, RichEmbed } = require('discord.js');
+// Create an instance of a Discord client
+const client = new Client();
+const prefix =  '|'
 
 
 client.on("ready", () =>{
@@ -16,18 +17,18 @@ client.on("ready", () =>{
 
 //discord help command
 client.on('message', message => {
-	// If the message is "how to embed"
-	if (message.content === 'how to embed') {
+	// If the message is "||help"
+	if (message.content === '|help') {
 	  // We can create embeds using the MessageEmbed constructor
 	  // Read more about all that you can do with the constructor
 	  // over at https://discord.js.org/#/docs/main/stable/class/RichEmbed
 	  const embed = new RichEmbed()
 		// Set the title of the field
-		.setTitle('A slick little embed')
+		.setTitle('Wrapper Online Commands')
 		// Set the color of the embed
 		.setColor(0xFF0000)
 		// Set the main content of the embed
-		.setDescription('Hello, this is a slick embed!');
+		.setDescription('|mjdance       |epikdance         |hiddencake     |avatar |say [ADMIN ONLY]');
 	  // Send the embed to the same channel as the message
 	  message.channel.send(embed);
 	}
@@ -35,15 +36,22 @@ client.on('message', message => {
   
 
 
-
+// Create an event listener for messages
+client.on('message', message => {
+	// If the message is "what is my avatar"
+	if (message.content === '|avatar') {
+	  // Send the user's avatar URL
+	  message.reply(message.author.avatarURL);
+	}
+  });
 
 // make bot say a thing
   client.on("message", async message => {
     if (message.author.bot) return;
     if (!message.member.hasPermission(["MANAGE_MESSAGES", "ADMINISTRATOR"])) return 
-    if (message.content.startsWith("||say ")) { // prefix
+    if (message.content.startsWith("|say ")) { // prefix
         message.delete(1); // Supposed to delete message
-        message.channel.send(message.content.slice(5, message.content.length));
+        message.channel.send(message.content.slice(4, message.content.length));
     }
 });
 
@@ -68,15 +76,15 @@ client.on('message', msg => {
 		msg.reply('no because hes my dad and hes god :rage:');
 	}
 
-	if (msg.content.includes('||epikdance')) {
+	if (msg.content.includes('|epikdance')) {
 		msg.reply("heres 2Epik4u dancing for no reason lol.", { files: ["./images/epikdance.gif"] });
 
 	}
-	if (msg.content.includes('||mjdance')) {
+	if (msg.content.includes('|mjdance')) {
 		msg.reply("heres MJ dancing for no reason lol.", { files: ["./images/mj.gif"] });
 
 	}
-	if (msg.content.includes('||hiddencake')) {
+	if (msg.content.includes('|hiddencake')) {
 		msg.reply("You Found the hidden cake! Good job!", { files: ["./images/cake.png"] });
 
 	}
