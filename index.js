@@ -271,7 +271,7 @@ client.on('message', msg => {
 		msg.reply('no')
 	}
 	
-	if (message.content === 'patched') {
+	if (msg.content === 'patched') {
 		msg.reply('Wrapper Online is NOT patched. The website is in #🕸💻website like always')
 
 	}
