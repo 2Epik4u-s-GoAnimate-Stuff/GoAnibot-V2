@@ -267,12 +267,12 @@ client.on('message', msg => {
 		msg.reply('washington aaaaaaaaaaaaaaaaaa')
 	}
 
-	if (msg.content === '|shutup' ) {
+	if (msg.startsWith === '|shutup' ) {
 		msg.reply('no')
 	}
 	
-	if (msg.content === 'patched') {
-		msg.reply('Wrapper Online is NOT patched. The website is in #🕸💻website like always')
+	if (msg.includes === 'patched') {
+		msg.reply('Wrapper Online is NOT patched. The website is in #website like always')
 
 	}
 	
