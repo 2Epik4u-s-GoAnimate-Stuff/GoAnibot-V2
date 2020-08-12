@@ -270,8 +270,11 @@ client.on('message', msg => {
 	if (msg.content === '|shutup' ) {
 		msg.reply('no')
 	}
+	
+	if (message.content === 'patched') {
+		msg.reply('Wrapper Online is NOT patched. The website is in #🕸💻website like always')
 
-
+	}
 	
 });
 // bot token login
