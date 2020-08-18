@@ -9,16 +9,34 @@ client.on("ready", () =>{
 	client.user.setPresence({
 			status: "online",  //You can show online, idle....
 			game: {
-					name: "|help",  //The message shown
-					type: "LISTENING" //PLAYING: WATCHING: LISTENING: STREAMING:
+					name: "Made by 2Epik4u | https://2epik4u.tk/goanibot | ",  //The message shown
+					type: "PLAYING" //PLAYING: WATCHING: LISTENING: STREAMING:
 			}
 	});
 });
 
 
+// gotest dance
+client.on('message', message => {
+	// If the message is "||help"
+	if (message.content === '|gotestdance') {
+
+	  const embed = new RichEmbed()
+	  
+		.setTitle('GoTest344 Dancing')
+		.attachFiles(['https://2epik4u.tk/bot/gotest.gif'])
+		.setDescription('nice.')
+		// Set the color of the embed
+		.setColor(0xFF0000)
+		// Set the main content of the embed
+
+	  // Send the embed to the same channel as the message
+	  message.channel.send(embed);
+	}
+  })
 
 
-//testing cake
+// cake
 client.on('message', message => {
 	// If the message is "||help"
 	if (message.content === '|hiddencake') {
@@ -26,8 +44,8 @@ client.on('message', message => {
 	  const embed = new RichEmbed()
 	  
 		.setTitle('You found the hidden cake!')
-		.attachFiles(['https://2epik4u.github.io/Wrapper-Online-Bot/images/cake.png'])
-		.setDescription('actually you didnt find it but whatever')
+		.attachFiles(['https://2epik4u.tk/bot/cake.png'])
+		.setDescription('nice. but its not a real cake so dont eat it!')
 		// Set the color of the embed
 		.setColor(0x0092b0)
 		// Set the main content of the embed
@@ -45,8 +63,8 @@ client.on('message', message => {
 	  const embed = new RichEmbed()
 	  
 		.setTitle('Here is 2Epik4u Dancing!')
-		.attachFiles(['https://2epik4u.github.io/Wrapper-Online-Bot/images/epikdance.gif'])
-		.setDescription('hes so hot')
+		.attachFiles(['https://2epik4u.tk/bot/epikdance.gif'])
+		.setDescription('What a LOSER!')
 		
 		// Set the color of the embed
 		.setColor(0x1653C1)
@@ -66,7 +84,7 @@ client.on('message', message => {
 	  const embed = new RichEmbed()
 	  
 		.setTitle('Woah is that MJ the spirit dancing')
-		.attachFiles(['https://2epik4u.github.io/Wrapper-Online-Bot/images/mj.gif'])
+		.attachFiles(['https://2epik4u.tk/bot/mj.gif'])
 		.setDescription('wait... why is he mad?')
 		// Set the color of the embed
 		.setColor(0xFC8C06)
@@ -87,8 +105,8 @@ client.on('message', message => {
 	  const embed = new RichEmbed()
 	  
 		.setTitle('CyanAnimate dancing very nice')
-		.attachFiles(['https://2epik4u.github.io/Wrapper-Online-Bot/images/cyan.gif'])
-		.setDescription('~~ew cyananimate~~')
+		.attachFiles(['https://2epik4u.tk/bot/cyan.gif'])
+		.setDescription('cyan more like tom from eddsworld')
 		// Set the color of the embed
 		.setColor(0xFC8C06)
 		// Set the main content of the embed
@@ -197,11 +215,11 @@ client.on('message', message => {
 	  // over at https://discord.js.org/#/docs/main/stable/class/RichEmbed
 	  const embed = new RichEmbed()
 		// Set the title of the field
-		.setTitle('Wrapper Online Commands')
+		.setTitle('GoAnibot')
 		// Set the color of the embed
 		.setColor(0xFF0000)
 		// Set the main content of the embed
-		.setDescription('|mjdance       |epikdance         |hiddencake   |cyandance    |avatar |say [ADMIN ONLY]    |ground  |unground');
+        .setDescription('Bot made by 2Epik4u fun: |mjdance       |epikdance         |hiddencake   |cyandance    |avatar |say   |ground  |unground |gotestdance');
 	  // Send the embed to the same channel as the message
 	  message.channel.send(embed);
 	}
@@ -271,11 +289,7 @@ client.on('message', msg => {
 		msg.reply('no')
 	}
 	
-	if (msg.includes === 'patched') {
-		msg.reply('Wrapper Online is NOT patched. The website is in #website like always')
 
-	}
-	
 });
 // bot token login
 client.login('NjI4NjA3MTkyODA2OTgxNjMy.XxKUOg.V11g5X6PCzrUNJ9rBXvWQv2CahI');
