@@ -9,7 +9,7 @@ client.on("ready", () =>{
 	client.user.setPresence({
 			status: "online",  //You can show online, idle....
 			game: {
-					name: "Made by 2Epik4u | https://2epik4u.tk/goanibot | ",  //The message shown
+					name: "Prefix (|) Website: 2epik4u.tk/goanibot Discord: 2epik4u.tk/2epik4u ",  //The message shown
 					type: "PLAYING" //PLAYING: WATCHING: LISTENING: STREAMING:
 			}
 	});
