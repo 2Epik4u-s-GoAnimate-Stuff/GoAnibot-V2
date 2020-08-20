@@ -1,8 +1,8 @@
 {
-	"name": "wrapper-online",
-	"description": "A Node.js app which communicates with a asset server using github sites to run the LVM",
+	"name": "GoAnibot",
+	"description": "A Node.js app which communicates with Discord api,
 	"version": "1.2.0",
-	"homepage": "https://discord.gg/Ca8ptww",
+	"homepage": "https://2epik4u.tk/2epik4u",
 	"license": "MIT",
 	"private": true,
 	"scripts": {
