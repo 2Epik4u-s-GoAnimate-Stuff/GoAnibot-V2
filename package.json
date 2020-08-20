@@ -1,6 +1,6 @@
 {
 	"name": "GoAnibot",
-	"description": "A Node.js app which communicates with Discord api,
+	"description": "A Node.js app which communicates with Discord api",
 	"version": "1.2.0",
 	"homepage": "https://2epik4u.tk/2epik4u",
 	"license": "MIT",
