@@ -1,14 +1,15 @@
 {
-  "name": "2epik4u-bot",
-  "version": "1.1.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "discord.js": "^11.5.1"
-  }
+	"name": "wrapper-online",
+	"description": "A Node.js app which communicates with a asset server using github sites to run the LVM",
+	"version": "1.2.0",
+	"homepage": "https://discord.gg/Ca8ptww",
+	"license": "MIT",
+	"private": true,
+	"scripts": {
+		"start": "node main.js"
+	},
+	"main": "index.js",
+	"dependencies": {
+		"discord.js": "^11.5.1"
+	}
 }
