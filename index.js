@@ -14,6 +14,25 @@ client.on("ready", () =>{
 			}
 	});
 });
+// LVM command
+// gotest dance
+client.on('message', message => {
+	// If the message is "||help"
+	if (message.content === '|lvm') {
+
+	  const embed = new RichEmbed()
+	  
+		.setTitle('Legacy Video makers')
+		.attachFiles(['https://img.youtube.com/vi/Y5RoHurytNw/maxresdefault.jpg'])
+		.setDescription('If you are on windows, Wrapper Offline is the way to go. If you want wrapper offline heres a tutorial. https://youtu.be/Y5RoHurytNw If you are on MacOS or Linux or Chromebook Use FutureAnimate. Heres the link  http://michiruisfire.eu-4.evennode.com/html/list.html')
+		// Set the color of the embed
+		.setColor(0xFF0000)
+		// Set the main content of the embed
+
+	  // Send the embed to the same channel as the message
+	  message.channel.send(embed);
+	}
+  })
 
 
 // gotest dance
