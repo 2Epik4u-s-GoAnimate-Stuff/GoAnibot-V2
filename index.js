@@ -22,7 +22,7 @@ client.on('message', message => {
 	  
 		.setTitle('FutureAnimate link')
 		.attachFiles(['https://img.youtube.com/vi/Y5RoHurytNw/maxresdefault.jpg'])
-		.setDescription(" Heres the link https://2epik4u.tk/FutureAnimate')
+		.setDescription('Heres the link https://2epik4u.tk/FutureAnimate')
 		// Set the color of the embed
 		.setColor(0xFF0000)
 		// Set the main content of the embed
