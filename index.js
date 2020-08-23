@@ -35,7 +35,7 @@ client.on('message', message => {
 
 client.on('message', message => {
 	// If the message is "||help"
-	if (message.content === '|goanibot') {
+	if (message.content === '|goanimate') {
 
 	  const embed = new RichEmbed()
 	  
