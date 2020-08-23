@@ -73,7 +73,8 @@ client.on('message', message => {
 
 client.on('message', message => {
 	// If the message is "||help"
-	if (message.content === '|videomaker) {
+	if (message.content === '|comedyworld') {
+
 
 	  const embed = new RichEmbed()
 	  
