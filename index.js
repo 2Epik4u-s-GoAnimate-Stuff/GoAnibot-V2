@@ -345,8 +345,8 @@ client.on('message', message => {
 // bot autoresponds
 client.on('message', msg => {
 
-	if (msg.mentions.users.has('<628607192806981632>')) {
-		msg.reply('Did you just fricken ping me. Thats it! you are grounded grounded grounded FOREVER.');
+	if (msg.content.includes('<@&628607192806981632>')) {
+		msg.reply('the prefix is | now leave me alone');
 	}
 
 	// includes responds
