@@ -14,15 +14,19 @@ client.on("ready", () =>{
 			}
 	});
 });
+
+
+
+
 client.on('message', message => {
 	// If the message is "||help"
 	if (message.content === '|futureanimate') {
 
 	  const embed = new RichEmbed()
 	  
-		.setTitle('FutureAnimate link')
+		.setTitle('FutureAnimate Is not up yet.')
 		.attachFiles(['https://img.youtube.com/vi/Y5RoHurytNw/maxresdefault.jpg'])
-		.setDescription('Heres the link https://2epik4u.tk/FutureAnimate')
+		.setDescription('When futureanimate does get updated i will put it here')
 		// Set the color of the embed
 		.setColor(0xFF0000)
 		// Set the main content of the embed
@@ -354,10 +358,10 @@ client.on('message', msg => {
 		msg.reply('no because hes my dad and hes god :rage:');
 	} 
 	if (msg.content.includes('owo')) {
-		msg.reply('Furry spotted. Prepare to be shot. :GetTheShotgun:');
+		msg.reply('Furry spotted. Prepare to be shot. <:GetTheShotgun:743138368506036224>');
 	} 
 		if (msg.content.includes('uwu')) {
-		msg.reply('Furry spotted. Prepare to be shot. :GetTheShotgun:');
+		msg.reply('Furry spotted. Prepare to be shot.<:GetTheShotgun:743138368506036224> ');
 	} 
 	
 	if (msg.content.includes('can 2epik4u be grounded')) {
