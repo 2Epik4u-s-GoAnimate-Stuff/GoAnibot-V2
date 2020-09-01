@@ -353,6 +353,13 @@ client.on('message', msg => {
 	if (msg.content.includes('Can 2Epik4u be grounded')) {
 		msg.reply('no because hes my dad and hes god :rage:');
 	} 
+	if (msg.content.includes('owo')) {
+		msg.reply('Furry spotted. Prepare to be shot. :GetTheShotgun:');
+	} 
+		if (msg.content.includes('uwu')) {
+		msg.reply('Furry spotted. Prepare to be shot. :GetTheShotgun:');
+	} 
+	
 	if (msg.content.includes('can 2epik4u be grounded')) {
 		msg.reply('no because hes my dad and hes god :rage:');
 	}
