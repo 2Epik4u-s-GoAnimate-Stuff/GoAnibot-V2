@@ -381,9 +381,7 @@ client.on('message', msg => {
 
 	
 	
-	if (msg.content === 'hi' ) {
-		msg.reply('hi how are u doing')
-	}
+
 	if (msg.content === 'your grounded' ) {
 		msg.reply('no u')
 	}
