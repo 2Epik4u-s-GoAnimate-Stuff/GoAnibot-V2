@@ -15,7 +15,23 @@ client.on("ready", () =>{
 	});
 });
 
+client.on('message', message => {
+	// If the message is "||help"
+	if (message.content === '|ragecookie') {
 
+	  const embed = new RichEmbed()
+	  
+		.setTitle('this is what development looks like xdd')
+		.attachFiles(['https://cdn.discordapp.com/attachments/571483118062796822/765585880005869598/Screen_Shot_2020-09-10_at_3.52.37_PM.png'])
+		.setDescription('EGS DE TOTAL NOT RIP OFF')
+		// Set the color of the embed
+		.setColor(0xFF0000)
+		// Set the main content of the embed
+
+	  // Send the embed to the same channel as the message
+	  message.channel.send(embed);
+	}
+  })
 
 
 client.on('message', message => {
