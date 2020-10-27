@@ -373,4 +373,4 @@ client.on('message', msg => {
 
 });
 // bot token login
-client.login('Notokenforyou ');
+client.login('ENTERTOKENHERE');
