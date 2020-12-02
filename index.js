@@ -17,7 +17,7 @@ client.on("ready", () =>{
 client.on('message', message => {
 	if (message.content === '|ragecookie') {
 
-	  const embed = new MessageEmbed ()
+	  const embed = new RichEmbed()
 	  
 		.setTitle('this is what development looks like xdd')
 		.attachFiles(['https://cdn.discordapp.com/attachments/571483118062796822/765585880005869598/Screen_Shot_2020-09-10_at_3.52.37_PM.png'])
@@ -35,7 +35,7 @@ client.on('message', message => {
 client.on('message', message => {
 	if (message.content === '|futureanimate') {
 
-	  const embed = new MessageEmbed()
+	  const embed = new RichEmbed()
 	  
 		.setTitle('FutureAnimate Is not up yet.')
 		.attachFiles(['https://img.youtube.com/vi/Y5RoHurytNw/maxresdefault.jpg'])
@@ -50,7 +50,7 @@ client.on('message', message => {
 
 	if (message.content === '|goanimate') {
 
-	  const embed = new MessageEmbed()
+	  const embed = new RichEmbed()
 	  
 		.setTitle('Legacy Video makers')
 		.attachFiles(['https://img.youtube.com/vi/Y5RoHurytNw/maxresdefault.jpg'])
@@ -115,105 +115,6 @@ client.on('message', message => {
   })
 
 
-// gotest dance
-client.on('message', message => {
-	
-	if (message.content === '|gotestdance') {
-
-	  const embed = new MessageEmbed()
-	  
-		.setTitle('GoTest344 Dancing')
-		.attachFiles(['https://2epik4u.tk/bot/gotest.gif'])
-		.setDescription('nice.')
-		// Set the color of the embed
-		.setColor(0xFF0000)
-		// Set the main content of the embed
-
-	  // Send the embed to the same channel as the message
-	  message.channel.send(embed);
-	}
-  })
-
-
-// cake
-client.on('message', message => {
-
-	if (message.content === '|hiddencake') {
-
-	  const embed = new MessageEmbed()
-	  
-		.setTitle('You found the hidden cake!')
-		.attachFiles(['https://2epik4u.tk/bot/cake.png'])
-		.setDescription('nice. but its not a real cake so dont eat it!')
-		// Set the color of the embed
-		.setColor(0x0092b0)
-		// Set the main content of the embed
-
-	  // Send the embed to the same channel as the message
-	  message.channel.send(embed);
-	}
-  })
-
-  //epik dancing
-  client.on('message', message => {
-
-	if (message.content === '|epikdance') {
-
-	  const embed = new MessageEmbed()
-	  
-		.setTitle('Here is 2Epik4u Dancing!')
-		.attachFiles(['https://2epik4u.tk/bot/epikdance.gif'])
-		.setDescription('What a LOSER!')
-		
-		// Set the color of the embed
-		.setColor(0x1653C1)
-		// Set the main content of the embed
-
-	  // Send the embed to the same channel as the message
-	  message.channel.send(embed);
-	}
-  })
-
-
-//mj dancing angry
-client.on('message', message => {
-
-	if (message.content === '|mjdance') {
-
-	  const embed = new MessageEmbed()
-	  
-		.setTitle('Woah is that MJ the spirit dancing')
-		.attachFiles(['https://2epik4u.tk/bot/mj.gif'])
-		.setDescription('wait... why is he mad?')
-		// Set the color of the embed
-		.setColor(0xFC8C06)
-		// Set the main content of the embed
-
-	  // Send the embed to the same channel as the message
-	  message.channel.send(embed);
-	}
-  })
-
-
-
-  //cyan dance
-  client.on('message', message => {
-
-	if (message.content === '|cyandance') {
-
-	  const embed = new MessageEmbed()
-	  
-		.setTitle('CyanAnimate dancing very nice')
-		.attachFiles(['https://2epik4u.tk/bot/cyan.gif'])
-		.setDescription('cyan more like tom from eddsworld')
-		// Set the color of the embed
-		.setColor(0xFC8C06)
-		// Set the main content of the embed
-
-	  // Send the embed to the same channel as the message
-	  message.channel.send(embed);
-	}
-  })
 
 
 //ground cmd
@@ -241,11 +142,11 @@ client.on('message', message => {
 		  });
 		} else {
 		  // The mentioned user isn't in this guild
-		  message.reply('That user isn\'t in this guild!');
+		  message.reply('This command is broken due to discord js 12 update. 2Epik4u has not made the command work on discord js 12 yet.');
 		}
 	  // Otherwise, if no user was mentioned
 	  } else {
-		message.reply('who ar u groundin???');
+		message.reply('This command is broken due to discord js 12 update. 2Epik4u has not made the command work on discord js 12 yet.');
 	  }
 	}
   });
@@ -280,11 +181,11 @@ client.on('message', message => {
 		  });
 		} else {
 		  
-		  message.reply('That user isn\'t in this guild!');
+		  message.reply('This command is broken due to discord js 12 update. 2Epik4u has not made the command work on discord js 12 yet.');
 		}
 
 	  } else {
-		message.reply('who ar u ungrunsis');
+		message.reply('This command is broken due to discord js 12 update. 2Epik4u has not made the command work on discord js 12 yet.');
 	  }
 	}
   });
@@ -294,13 +195,13 @@ client.on('message', message => {
 	
 	if (message.content === '|help') {
 
-	  const embed = new MessageEmbeds()
+	  const embed = new RichEmbed()
 		// Set the title of the field
 		.setTitle('GoAnibot')
 		// Set the color of the embed
 		.setColor(0xFF0000)
 		// Set the main content of the embed
-        .setDescription('Bot made by 2Epik4u fun: |mjdance       |epikdance         |hiddencake   |cyandance    |avatar |say   |ground  |unground |gotestdance');
+        .setDescription('Bot made by 2Epik4u fun: |mjdance       |epikdance         |hiddencake   |cyandance    |avatar |say (not coded in yet)   |ground  |unground |gotestdance');
 	  // Send the embed to the same channel as the message
 	  message.channel.send(embed);
 	}
@@ -331,7 +232,7 @@ client.on('message', message => {
 // bot autoresponds
 client.on('message', msg => {
 
-	if (msg.content.includes('<@&628607192806981632>')) {
+	if (msg.content.includes('<@628607192806981632>')) {
 		msg.reply('the prefix is | now leave me alone');
 	}
 
@@ -369,7 +270,7 @@ client.on('message', msg => {
 	if (msg.startsWith === '|shutup' ) {
 		msg.reply('no')
 	}
-	
+
 
 });
 // bot token login

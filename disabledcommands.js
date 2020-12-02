@@ -42,3 +42,106 @@ client.on('message', message => {
     }
 });
 // end of say command
+
+
+
+// gotest dance
+client.on('message', message => {
+	
+	if (message.content === '|gotestdance') {
+
+	  const embed = new RichEmbed()
+	  
+		.setTitle('GoTest344 Dancing')
+		.attachFiles(['https://2epik4u.tk/bot/gotest.gif'])
+		.setDescription('nice.')
+		// Set the color of the embed
+		.setColor(0xFF0000)
+		// Set the main content of the embed
+
+	  // Send the embed to the same channel as the message
+	  message.channel.send(embed);
+	}
+  })
+
+
+// cake
+client.on('message', message => {
+
+	if (message.content === '|hiddencake') {
+
+	  const embed = new MessageEmbed()
+	  
+		.setTitle('You found the hidden cake!')
+		.attachFiles(['https://2epik4u.tk/bot/cake.png'])
+		.setDescription('nice. but its not a real cake so dont eat it!')
+		// Set the color of the embed
+		.setColor(0x0092b0)
+		// Set the main content of the embed
+
+	  // Send the embed to the same channel as the message
+	  message.channel.send(embed);
+	}
+  })
+
+  //epik dancing
+  client.on('message', message => {
+
+	if (message.content === '|epikdance') {
+
+	  const embed = new MessageEmbed()
+	  
+		.setTitle('Here is 2Epik4u Dancing!')
+		.attachFiles(['https://2epik4u.tk/bot/epikdance.gif'])
+		.setDescription('What a LOSER!')
+		
+		// Set the color of the embed
+		.setColor(0x1653C1)
+		// Set the main content of the embed
+
+	  // Send the embed to the same channel as the message
+	  message.channel.send(embed);
+	}
+  })
+
+
+//mj dancing angry
+client.on('message', message => {
+
+	if (message.content === '|mjdance') {
+
+	  const embed = new MessageEmbed()
+	  
+		.setTitle('Woah is that MJ the spirit dancing')
+		.attachFiles(['https://2epik4u.tk/bot/mj.gif'])
+		.setDescription('wait... why is he mad?')
+		// Set the color of the embed
+		.setColor(0xFC8C06)
+		// Set the main content of the embed
+
+	  // Send the embed to the same channel as the message
+	  message.channel.send(embed);
+	}
+  })
+
+
+
+  //cyan dance
+  client.on('message', message => {
+
+	if (message.content === '|cyandance') {
+
+	  const embed = new MessageEmbed()
+	  
+		.setTitle('CyanAnimate dancing very nice')
+		.attachFiles(['https://2epik4u.tk/bot/cyan.gif'])
+		.setDescription('cyan more like tom from eddsworld')
+		// Set the color of the embed
+		.setColor(0xFC8C06)
+		// Set the main content of the embed
+
+	  // Send the embed to the same channel as the message
+	  message.channel.send(embed);
+	}
+  })
+
