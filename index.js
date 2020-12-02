@@ -1,4 +1,4 @@
-const { Client, RichEmbed } = require('discord.js');
+const { Client, RichEmbed, MessageEmbed } = require('discord.js');
 const client = new Client();
 const prefix =  '|'
 
@@ -17,7 +17,7 @@ client.on("ready", () =>{
 client.on('message', message => {
 	if (message.content === '|ragecookie') {
 
-	  const embed = new RichEmbed()
+	  const embed = new MessageEmbed ()
 	  
 		.setTitle('this is what development looks like xdd')
 		.attachFiles(['https://cdn.discordapp.com/attachments/571483118062796822/765585880005869598/Screen_Shot_2020-09-10_at_3.52.37_PM.png'])
@@ -35,7 +35,7 @@ client.on('message', message => {
 client.on('message', message => {
 	if (message.content === '|futureanimate') {
 
-	  const embed = new RichEmbed()
+	  const embed = new MessageEmbed()
 	  
 		.setTitle('FutureAnimate Is not up yet.')
 		.attachFiles(['https://img.youtube.com/vi/Y5RoHurytNw/maxresdefault.jpg'])
@@ -50,7 +50,7 @@ client.on('message', message => {
 
 	if (message.content === '|goanimate') {
 
-	  const embed = new RichEmbed()
+	  const embed = new MessageEmbed()
 	  
 		.setTitle('Legacy Video makers')
 		.attachFiles(['https://img.youtube.com/vi/Y5RoHurytNw/maxresdefault.jpg'])
@@ -65,7 +65,7 @@ client.on('message', message => {
 client.on('message', message => {
 	if (message.content === '|comedyworld') {
 
-	  const embed = new RichEmbed()
+	  const embed = new MessageEmbed()
 	  
 		.setTitle('Legacy Video makers')
 		.attachFiles(['https://img.youtube.com/vi/Y5RoHurytNw/maxresdefault.jpg'])
@@ -82,7 +82,7 @@ client.on('message', message => {
 	if (message.content === '|comedyworld') {
 
 
-	  const embed = new RichEmbed()
+	  const embed = new MessageEmbed()
 	  
 		.setTitle('Legacy Video makers')
 		.attachFiles(['https://img.youtube.com/vi/Y5RoHurytNw/maxresdefault.jpg'])
@@ -101,7 +101,7 @@ client.on('message', message => {
 
 	if (message.content === '|lvm') {
 
-	  const embed = new RichEmbed()
+	  const embed = new MessageEmbed()
 	  
 		.setTitle('Legacy Video makers')
 		.attachFiles(['https://img.youtube.com/vi/Y5RoHurytNw/maxresdefault.jpg'])
@@ -120,7 +120,7 @@ client.on('message', message => {
 	
 	if (message.content === '|gotestdance') {
 
-	  const embed = new RichEmbed()
+	  const embed = new MessageEmbed()
 	  
 		.setTitle('GoTest344 Dancing')
 		.attachFiles(['https://2epik4u.tk/bot/gotest.gif'])
@@ -140,7 +140,7 @@ client.on('message', message => {
 
 	if (message.content === '|hiddencake') {
 
-	  const embed = new RichEmbed()
+	  const embed = new MessageEmbed()
 	  
 		.setTitle('You found the hidden cake!')
 		.attachFiles(['https://2epik4u.tk/bot/cake.png'])
@@ -159,7 +159,7 @@ client.on('message', message => {
 
 	if (message.content === '|epikdance') {
 
-	  const embed = new RichEmbed()
+	  const embed = new MessageEmbed()
 	  
 		.setTitle('Here is 2Epik4u Dancing!')
 		.attachFiles(['https://2epik4u.tk/bot/epikdance.gif'])
@@ -180,7 +180,7 @@ client.on('message', message => {
 
 	if (message.content === '|mjdance') {
 
-	  const embed = new RichEmbed()
+	  const embed = new MessageEmbed()
 	  
 		.setTitle('Woah is that MJ the spirit dancing')
 		.attachFiles(['https://2epik4u.tk/bot/mj.gif'])
@@ -201,7 +201,7 @@ client.on('message', message => {
 
 	if (message.content === '|cyandance') {
 
-	  const embed = new RichEmbed()
+	  const embed = new MessageEmbed()
 	  
 		.setTitle('CyanAnimate dancing very nice')
 		.attachFiles(['https://2epik4u.tk/bot/cyan.gif'])
@@ -249,7 +249,7 @@ client.on('message', message => {
 	  }
 	}
   });
-  
+  //end of grounded command
 
 
 
@@ -294,7 +294,7 @@ client.on('message', message => {
 	
 	if (message.content === '|help') {
 
-	  const embed = new RichEmbed()
+	  const embed = new MessageEmbeds()
 		// Set the title of the field
 		.setTitle('GoAnibot')
 		// Set the color of the embed
@@ -319,14 +319,14 @@ client.on('message', message => {
   });
 
 // make bot say a thing
-  client.on("message", async message => {
-    if (message.author.bot) return;
-    if (!message.member.hasPermission(["MANAGE_MESSAGES", "ADMINISTRATOR"])) return 
-    if (message.content.startsWith("|say ")) { // prefix
-        message.delete(1); // Supposed to delete message
-        message.channel.send(message.content.slice(4, message.content.length));
-    }
-});
+//  client.on("message", async message => {
+//    if (message.author.bot) return;
+//    if (!message.member.hasPermission(["MANAGE_MESSAGES", "ADMINISTRATOR"])) return 
+//    if (message.content.startsWith("|say ")) { // prefix
+//        message.delete(1); // Supposed to delete message
+//        message.channel.send(message.content.slice(4, message.content.length));
+//    }
+//});
 
 // bot autoresponds
 client.on('message', msg => {
@@ -373,4 +373,5 @@ client.on('message', msg => {
 
 });
 // bot token login
-client.login('ENTERTOKENHERE');
+client.login('NjI4NjA3MTkyODA2OTgxNjMy.XZNqEQ.2aZcvDimw5Feep1VeoeBa_VnWtU');
+

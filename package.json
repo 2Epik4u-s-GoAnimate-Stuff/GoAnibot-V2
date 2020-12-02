@@ -1,15 +1,29 @@
 {
-	"name": "GoAnibot",
-	"description": "A Node.js app which communicates with Discord api",
-	"version": "1.2.0",
-	"homepage": "https://2epik4u.tk/2epik4u",
-	"license": "MIT",
-	"private": true,
-	"scripts": {
-		"start": "node index.js"
-	},
-	"main": "index.js",
-	"dependencies": {
-		"discord.js": "^11.5.1"
-	}
+  "name": "goanibot",
+  "description": "A Node.js app which communicates with Discord api",
+  "version": "1.2.2",
+  "homepage": "https://2epik4u.tk/2epik4u",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@discordjs/uws": "^10.149.0",
+    "discord.js": "^11.5.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2Epik4u/GoAnibot.git"
+  },
+  "keywords": [
+    "goanimate",
+    "bot"
+  ],
+  "author": "2Epik4u",
+  "bugs": {
+    "url": "https://github.com/2Epik4u/GoAnibot/issues"
+  }
 }
