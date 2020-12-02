@@ -8,12 +8,13 @@ client.on("ready", () =>{
 	client.user.setPresence({
 			status: "online",  //You can show online, idle....
 			game: {
-					name: "Prefix (|) Website: 2epik4u.tk/goanibot Discord: 2epik4u.tk/2epik4u ",  //The message shown
+					name: "alpha testing yay",  //The message shown
 					type: "PLAYING" //PLAYING: WATCHING: LISTENING: STREAMING:
 			}
 	});
 });
 
+// Prefix (|) Website: 2epik4u.tk/goanibot Discord: 2epik4u.tk/2epik4u
 client.on('message', message => {
 	if (message.content === '|ragecookie') {
 
@@ -62,38 +63,22 @@ client.on('message', message => {
 
 
 
-client.on('message', message => {
+  client.on('message', message => {
+
 	if (message.content === '|comedyworld') {
 
-	  const embed = new MessageEmbed()
+	  const embed = new RichEmbed()
 	  
 		.setTitle('Legacy Video makers')
 		.attachFiles(['https://img.youtube.com/vi/Y5RoHurytNw/maxresdefault.jpg'])
 		.setDescription('If you are on windows, Wrapper Offline is the way to go. If you want wrapper offline heres a tutorial. https://youtu.be/Y5RoHurytNw If you are on MacOS or Linux or Chromebook Use FutureAnimate. Heres the link  http://michiruisfire.eu-4.evennode.com/html/list.html')
 		.setColor(0xFF0000)
-
-
 	  message.channel.send(embed);
 	}
   })
 
-client.on('message', message => {
-	
-	if (message.content === '|comedyworld') {
 
 
-	  const embed = new MessageEmbed()
-	  
-		.setTitle('Legacy Video makers')
-		.attachFiles(['https://img.youtube.com/vi/Y5RoHurytNw/maxresdefault.jpg'])
-		.setDescription('If you are on windows, Wrapper Offline is the way to go. If you want wrapper offline heres a tutorial. https://youtu.be/Y5RoHurytNw If you are on MacOS or Linux or Chromebook Use FutureAnimate. Heres the link  http://michiruisfire.eu-4.evennode.com/html/list.html')
-		
-		.setColor(0xFF0000)
-		
-
-	  message.channel.send(embed);
-	}
-  })
 
 
 // LVM command
@@ -101,7 +86,7 @@ client.on('message', message => {
 
 	if (message.content === '|lvm') {
 
-	  const embed = new MessageEmbed()
+	  const embed = new RichEmbed()
 	  
 		.setTitle('Legacy Video makers')
 		.attachFiles(['https://img.youtube.com/vi/Y5RoHurytNw/maxresdefault.jpg'])
@@ -114,6 +99,108 @@ client.on('message', message => {
 	}
   })
 
+
+  // gotest dance
+  client.on('message', message => {
+	  
+	  if (message.content === '|gotestdance') {
+  
+		const embed = new RichEmbed()
+		
+		  .setTitle('GoTest344 Dancing')
+		  .attachFiles(['https://cdn.discordapp.com/attachments/740797420744474734/747367509509799946/gotest.gif'])
+		  .setDescription('nice.')
+		  // Set the color of the embed
+		  .setColor(0xFF0000)
+		  // Set the main content of the embed
+  
+		// Send the embed to the same channel as the message
+		message.channel.send(embed);
+	  }
+	})
+  
+  
+  // cake
+  client.on('message', message => {
+  
+	  if (message.content === '|hiddencake') {
+  
+		const embed = new RichEmbed()
+		
+		  .setTitle('You found the hidden cake!')
+		  .attachFiles(['https://cdn.discordapp.com/attachments/740797420744474734/747365229737934928/cake.png'])
+		  .setDescription('nice. but its not a real cake so dont eat it!')
+		  // Set the color of the embed
+		  .setColor(0x0092b0)
+		  // Set the main content of the embed
+  
+		// Send the embed to the same channel as the message
+		message.channel.send(embed);
+	  }
+	})
+  
+	//epik dancing
+	client.on('message', message => {
+  
+	  if (message.content === '|epikdance') {
+  
+		const embed = new RichEmbed()
+		
+		  .setTitle('Here is 2Epik4u Dancing!')
+		  .attachFiles(['https://cdn.discordapp.com/attachments/740797420744474734/746628859784331304/epikdance.gif'])
+		  .setDescription('What a LOSER!')
+		  
+		  // Set the color of the embed
+		  .setColor(0x1653C1)
+		  // Set the main content of the embed
+  
+		// Send the embed to the same channel as the message
+		message.channel.send(embed);
+	  }
+	})
+  
+  
+  //mj dancing angry
+  client.on('message', message => {
+  
+	  if (message.content === '|mjdance') {
+  
+		const embed = new RichEmbed()
+		
+		  .setTitle('Woah is that MJ the spirit dancing')
+		  .attachFiles(['https://cdn.discordapp.com/attachments/740797420744474734/746628777555263488/mj.gif'])
+		  .setDescription('wait... why is he mad?')
+		  // Set the color of the embed
+		  .setColor(0xFC8C06)
+		  // Set the main content of the embed
+  
+		// Send the embed to the same channel as the message
+		message.channel.send(embed);
+	  }
+	})
+  
+  
+  
+	//cyan dance
+	client.on('message', message => {
+  
+	  if (message.content === '|cyandance') {
+  
+		const embed = new RichEmbed()
+		
+		  .setTitle('CyanAnimate dancing very nice')
+		  .attachFiles(['https://2epik4u.tk/bot/cyan.gif'])
+		  .setDescription('cyan more like tom from eddsworld')
+		  // Set the color of the embed
+		  .setColor(0xFC8C06)
+		  // Set the main content of the embed
+  
+		// Send the embed to the same channel as the message
+		message.channel.send(embed);
+	  }
+	})
+  
+  
 
 
 
@@ -266,10 +353,12 @@ client.on('message', msg => {
 	if (msg.content === 'uoillac' ) {
 		msg.reply('washington aaaaaaaaaaaaaaaaaa')
 	}
+	
 
 	if (msg.startsWith === '|shutup' ) {
 		msg.reply('no')
 	}
+
 
 
 });
