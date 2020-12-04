@@ -158,6 +158,24 @@ client.on('message', message => {
 		message.channel.send(embed);
 	  }
 	})
+	client.on('message', message => {
+  
+		if (message.content === '|lemondance') {
+	
+		  const embed = new RichEmbed()
+		  
+			.setTitle('Cushion Poggers Dancing!!!!')
+			.attachFiles(['https://cdn.discordapp.com/attachments/736381316039180350/783769510255001620/lemondance.gif'])
+			.setDescription('oh no hes not poggers')
+			
+			// Set the color of the embed
+			.setColor(0xFE0000)
+			// Set the main content of the embed
+	
+		  // Send the embed to the same channel as the message
+		  message.channel.send(embed);
+		}
+	  })
   
   
   //mj dancing angry
@@ -168,8 +186,8 @@ client.on('message', message => {
 		const embed = new RichEmbed()
 		
 		  .setTitle('Woah is that MJ the spirit dancing')
-		  .attachFiles(['https://cdn.discordapp.com/attachments/740797420744474734/746628777555263488/mj.gif'])
-		  .setDescription('wait... why is he mad?')
+		  .attachFiles(['https://cdn.discordapp.com/attachments/757778344900034560/783863755209572362/ezgif-5-3af8a77a80ce.gif'])
+		  .setDescription('cool!!')
 		  // Set the color of the embed
 		  .setColor(0xFC8C06)
 		  // Set the main content of the embed
@@ -189,7 +207,7 @@ client.on('message', message => {
 		const embed = new RichEmbed()
 		
 		  .setTitle('CyanAnimate dancing very nice')
-		  .attachFiles(['https://2epik4u.tk/bot/cyan.gif'])
+		  .attachFiles(['https://cdn.discordapp.com/attachments/740797420744474734/746522631926448168/cyan.gif'])
 		  .setDescription('cyan more like tom from eddsworld')
 		  // Set the color of the embed
 		  .setColor(0xFC8C06)
@@ -205,77 +223,98 @@ client.on('message', message => {
 
 
 //ground cmd
+//ground cmd
 client.on('message', message => {
+	// Ignore messages that aren't from a guild
 	if (!message.guild) return;
   
-
+	// If the message content starts with "!kick"
 	if (message.content.startsWith('|ground')) {
-
+	  // Assuming we mention someone in the message, this will return the user
+	  // Read more about mentions over at https://discord.js.org/#/docs/main/stable/class/MessageMentions
 	  const user = message.mentions.users.first();
-
+	  // If we have a user mentioned
 	  if (user) {
-
+		// Now we get the member from the user
 		const member = message.guild.member(user);
-
+		// If the member is in the guild
 		if (member) {
-
-		  message.reply(`${user.tag} is gunsis they wil go 2 dare room  `).then(() => {
+		  /**
+		   * Kick the member
+		   * Make sure you run this on a member, not a user!
+		   * There are big differences between a user and a member
+		   */
+		  message.channel.send(`${user.tag} is gunsis they wil go 2 dare room  `).then(() => {
+			// We let the message author know we were able to kick the person
 			
 		  }).catch(err => {
-	
+			// An error happened
+			// This is generally due to the bot not being able to kick the member,
+			// either due to missing permissions or role hierarchy
 			message.reply('I was unable to ground the member');
-			
+			// Log the error
 			console.error(err);
 		  });
 		} else {
 		  // The mentioned user isn't in this guild
-		  message.reply('This command is broken due to discord js 12 update. 2Epik4u has not made the command work on discord js 12 yet.');
+		  message.reply('That user isn\'t in this guild!');
 		}
 	  // Otherwise, if no user was mentioned
 	  } else {
-		message.reply('This command is broken due to discord js 12 update. 2Epik4u has not made the command work on discord js 12 yet.');
+		message.reply('who ar u groundin???');
 	  }
 	}
   });
-  //end of grounded command
+  
 
 
 
 //unground command
   client.on('message', message => {
-
+	// Ignore messages that aren't from a guild
 	if (!message.guild) return;
   
 	
 	if (message.content.startsWith('|unground')) {
-
+	  // Assuming we mention someone in the message, this will return the user
+	  // Read more about mentions over at https://discord.js.org/#/docs/main/stable/class/MessageMentions
 	  const user = message.mentions.users.first();
-
+	  // If we have a user mentioned
 	  if (user) {
-
+		// Now we get the member from the user
 		const member = message.guild.member(user);
 		// If the member is in the guild
 		if (member) {
-
-		  message.reply(`${user.tag} is ungunsis  day can go 2 chuk e cheez  `).then(() => {
-			
+		  /**
+		   * Kick the member
+		   * Make sure you run this on a member, not a user!
+		   * There are big differences between a user and a member
+		   */
+		 message.channel.send(`${user} is ungunsis  day can go 2 chuk e cheez  `).then(() => {
+			// We let the message author know we were able to kick the person
 			
 		  }).catch(err => {
-	
+			// An error happened
+			// This is generally due to the bot not being able to kick the member,
+			// either due to missing permissions or role hierarchy
 			message.reply('srry but i cant ground him he has som hax or somethin');
-			
+			// Log the error
 			console.error(err);
 		  });
 		} else {
-		  
-		  message.reply('This command is broken due to discord js 12 update. 2Epik4u has not made the command work on discord js 12 yet.');
+		  // The mentioned user isn't in this guild
+		  message.reply('That user isn\'t in this guild!');
 		}
-
+	  // Otherwise, if no user was mentioned
 	  } else {
-		message.reply('This command is broken due to discord js 12 update. 2Epik4u has not made the command work on discord js 12 yet.');
+		message.reply('who ar u ungrunsis');
 	  }
 	}
   });
+
+
+
+//unground command
 
 //discord help command
 client.on('message', message => {
@@ -307,21 +346,19 @@ client.on('message', message => {
   });
 
 // make bot say a thing
-//  client.on("message", async message => {
-//    if (message.author.bot) return;
-//    if (!message.member.hasPermission(["MANAGE_MESSAGES", "ADMINISTRATOR"])) return 
-//    if (message.content.startsWith("|say ")) { // prefix
-//        message.delete(1); // Supposed to delete message
-//        message.channel.send(message.content.slice(4, message.content.length));
-//    }
-//});
+ client.on("message", async message => {
+    if (message.author.bot) return;
+	if ((['MANAGE_MESSAGES', 'BAN_MEMBERS']))  return
+    if (message.content.startsWith("|say ")) { // prefix
+        message.delete(1); // Supposed to delete message
+        message.channel.send(message.content.slice(4, message.content.length));
+    }
+});
 
 // bot autoresponds
 client.on('message', msg => {
 
-	if (msg.content.includes('<@628607192806981632>')) {
-		msg.reply('the prefix is | now leave me alone');
-	}
+
 
 	// includes responds
 	if (msg.content.includes('Can 2Epik4u be grounded')) {
