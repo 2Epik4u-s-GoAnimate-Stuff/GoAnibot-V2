@@ -395,16 +395,18 @@ client.on('message', msg => {
 	if (msg.startsWith === '|shutup' ) {
 		msg.reply('no')
 	}
-	if (msg.content === 'uoillac' ) {
-        msg.reply('yes, but epik denies it...')
-     if (msg.content === 'can mj be grounded' ) {
-	     
-        msg.reply('how dare you want MJ to be grunses thats it you are grounded until hell freezes over now go to washington aaaaaaaaaaaa')
-	     
-	   } 
+	if (msg.content === 'mj:online' ) {
+		msg.reply('yes, but epik denies it...')
+	}
+   
+	
+	
 
 
-
+	
+	   if (msg.content === 'can mj be grounded' ) {
+		msg.reply('how dare you want MJ to be grunses thats it you are grounded until hell freezes over now go to washington aaaaaaaaaaaa')
+	}
 
 });
 // bot token login
