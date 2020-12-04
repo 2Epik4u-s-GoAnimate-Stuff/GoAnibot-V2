@@ -244,7 +244,7 @@ client.on('message', message => {
 		   * Make sure you run this on a member, not a user!
 		   * There are big differences between a user and a member
 		   */
-		  message.channel.send(`${user.tag} is gunsis they wil go 2 dare room  `).then(() => {
+		  message.channel.send(`${user} is gunsis they wil go 2 dare room  `).then(() => {
 			// We let the message author know we were able to kick the person
 			
 		  }).catch(err => {
