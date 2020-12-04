@@ -265,7 +265,8 @@ client.on('message', message => {
   });
 
 // make bot say a thing
- client.on("message", async message => {
+// make bot say a thing
+client.on("message", async message => {
     if (message.author.bot) return;
 	if ((['MANAGE_MESSAGES', 'BAN_MEMBERS']))  return
     if (message.content.startsWith("|say ")) { // prefix
@@ -273,7 +274,6 @@ client.on('message', message => {
         message.channel.send(message.content.slice(4, message.content.length));
     }
 });
-
 // bot autoresponds
 client.on('message', msg => {
 
@@ -335,5 +335,5 @@ client.on('message', msg => {
 
 });
 // bot token login
-client.login('NjI4NjA3MTkyODA2OTgxNjMy.XZNqEQ.2aZcvDimw5Feep1VeoeBa_VnWtU');
+client.login('NzgzNzMzMDExOTM2OTY4NzI0.X8fCPw.E7X9ZAeGlTApHDYjuAuR8OGqnEg');
 
