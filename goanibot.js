@@ -1,6 +1,7 @@
-const { Client, RichEmbed, MessageEmbed } = require('discord.js');
-const client = new Client();
+const Discord = require('discord.js');
+const client = new Discord.Client();
 const config = require('./config.json');
+const prefix = '|'
 
 
 client.on("ready", () =>{
@@ -8,17 +9,19 @@ client.on("ready", () =>{
 	client.user.setPresence({
 			status: "online",  //You can show online, idle....
 			game: {
-					name: "alpha testing yay",  //The message shown
+					name: "Goanibot is in full release pog",  //The message shown
 					type: "PLAYING" //PLAYING: WATCHING: LISTENING: STREAMING:
 			}
 	});
 });
 
+
+
 // Prefix (|) Website: 2epik4u.tk/goanibot Discord: 2epik4u.tk/2epik4u
 client.on('message', message => {
 	if (message.content === '|ragecookie') {
 
-	  const embed = new RichEmbed()
+		const GoEmbed = new Discord.MessageEmbed()
 	  
 		.setTitle('this is what development looks like xdd')
 		.attachFiles(['https://cdn.discordapp.com/attachments/571483118062796822/765585880005869598/Screen_Shot_2020-09-10_at_3.52.37_PM.png'])
@@ -28,76 +31,12 @@ client.on('message', message => {
 		// Set the main content of the embed
 
 	  // Send the embed to the same channel as the message
-	  message.channel.send(embed);
-	}
-  })
-
-
-client.on('message', message => {
-	if (message.content === '|futureanimate') {
-
-	  const embed = new RichEmbed()
-	  
-		.setTitle('FutureAnimate Is not up yet.')
-		.attachFiles(['https://img.youtube.com/vi/Y5RoHurytNw/maxresdefault.jpg'])
-		.setDescription('When futureanimate does get updated i will put it here')
-		.setColor(0xFF0000)
-	  message.channel.send(embed);
-	}
-  })
-
-
-client.on('message', message => {
-
-	if (message.content === '|goanimate') {
-
-	  const embed = new RichEmbed()
-	  
-		.setTitle('Legacy Video makers')
-		.attachFiles(['https://img.youtube.com/vi/Y5RoHurytNw/maxresdefault.jpg'])
-		.setDescription('If you are on windows, Wrapper Offline is the way to go. If you want wrapper offline heres a tutorial. https://youtu.be/Y5RoHurytNw If you are on MacOS or Linux or Chromebook Use FutureAnimate. Heres the link  http://michiruisfire.eu-4.evennode.com/html/list.html')
-		.setColor(0xFF0000)
-	  message.channel.send(embed);
+	  message.channel.send(GoEmbed);
 	}
   })
 
 
 
-  client.on('message', message => {
-
-	if (message.content === '|comedyworld') {
-
-	  const embed = new RichEmbed()
-	  
-		.setTitle('Legacy Video makers')
-		.attachFiles(['https://img.youtube.com/vi/Y5RoHurytNw/maxresdefault.jpg'])
-		.setDescription('If you are on windows, Wrapper Offline is the way to go. If you want wrapper offline heres a tutorial. https://youtu.be/Y5RoHurytNw If you are on MacOS or Linux or Chromebook Use FutureAnimate. Heres the link  http://michiruisfire.eu-4.evennode.com/html/list.html')
-		.setColor(0xFF0000)
-	  message.channel.send(embed);
-	}
-  })
-
-
-
-
-
-// LVM command
-client.on('message', message => {
-
-	if (message.content === '|lvm') {
-
-	  const embed = new RichEmbed()
-	  
-		.setTitle('Legacy Video makers')
-		.attachFiles(['https://img.youtube.com/vi/Y5RoHurytNw/maxresdefault.jpg'])
-		.setDescription('If you are on windows, Wrapper Offline is the way to go. If you want wrapper offline heres a tutorial. https://youtu.be/Y5RoHurytNw If you are on MacOS or Linux or Chromebook Use FutureAnimate. Heres the link  http://michiruisfire.eu-4.evennode.com/html/list.html')
-		
-		.setColor(0xFF0000)
-
-
-	  message.channel.send(embed);
-	}
-  })
 
 
   // gotest dance
@@ -105,7 +44,7 @@ client.on('message', message => {
 	  
 	  if (message.content === '|gotestdance') {
   
-		const embed = new RichEmbed()
+		const GoEmbed = new Discord.MessageEmbed()
 		
 		  .setTitle('GoTest344 Dancing')
 		  .attachFiles(['https://cdn.discordapp.com/attachments/740797420744474734/747367509509799946/gotest.gif'])
@@ -115,7 +54,7 @@ client.on('message', message => {
 		  // Set the main content of the embed
   
 		// Send the embed to the same channel as the message
-		message.channel.send(embed);
+		message.channel.send(GoEmbed);
 	  }
 	})
   
@@ -125,7 +64,7 @@ client.on('message', message => {
   
 	  if (message.content === '|hiddencake') {
   
-		const embed = new RichEmbed()
+		const GoEmbed = new Discord.MessageEmbed()
 		
 		  .setTitle('You found the hidden cake!')
 		  .attachFiles(['https://cdn.discordapp.com/attachments/740797420744474734/747365229737934928/cake.png'])
@@ -135,7 +74,7 @@ client.on('message', message => {
 		  // Set the main content of the embed
   
 		// Send the embed to the same channel as the message
-		message.channel.send(embed);
+		message.channel.send(GoEmbed);
 	  }
 	})
   
@@ -144,7 +83,7 @@ client.on('message', message => {
   
 	  if (message.content === '|epikdance') {
   
-		const embed = new RichEmbed()
+		const GoEmbed = new Discord.MessageEmbed()
 		
 		  .setTitle('Here is 2Epik4u Dancing!')
 		  .attachFiles(['https://cdn.discordapp.com/attachments/740797420744474734/746628859784331304/epikdance.gif'])
@@ -155,14 +94,14 @@ client.on('message', message => {
 		  // Set the main content of the embed
   
 		// Send the embed to the same channel as the message
-		message.channel.send(embed);
+		message.channel.send(GoEmbed);
 	  }
 	})
 	client.on('message', message => {
   
 		if (message.content === '|lemondance') {
 	
-		  const embed = new RichEmbed()
+			const GoEmbed = new Discord.MessageEmbed()
 		  
 			.setTitle('Cushion Poggers Dancing!!!!')
 			.attachFiles(['https://cdn.discordapp.com/attachments/736381316039180350/783769510255001620/lemondance.gif'])
@@ -173,7 +112,7 @@ client.on('message', message => {
 			// Set the main content of the embed
 	
 		  // Send the embed to the same channel as the message
-		  message.channel.send(embed);
+		  message.channel.send(GoEmbed);
 		}
 	  })
   
@@ -183,7 +122,7 @@ client.on('message', message => {
   
 	  if (message.content === '|mjdance') {
   
-		const embed = new RichEmbed()
+		const GoEmbed = new Discord.MessageEmbed()
 		
 		  .setTitle('Woah is that MJ the spirit dancing')
 		  .attachFiles(['https://cdn.discordapp.com/attachments/757778344900034560/783863755209572362/ezgif-5-3af8a77a80ce.gif'])
@@ -193,7 +132,7 @@ client.on('message', message => {
 		  // Set the main content of the embed
   
 		// Send the embed to the same channel as the message
-		message.channel.send(embed);
+		message.channel.send(GoEmbed);
 	  }
 	})
   
@@ -204,7 +143,7 @@ client.on('message', message => {
   
 	  if (message.content === '|cyandance') {
   
-		const embed = new RichEmbed()
+		const GoEmbed = new Discord.MessageEmbed()
 		
 		  .setTitle('CyanAnimate dancing very nice')
 		  .attachFiles(['https://cdn.discordapp.com/attachments/740797420744474734/746522631926448168/cyan.gif'])
@@ -214,7 +153,7 @@ client.on('message', message => {
 		  // Set the main content of the embed
   
 		// Send the embed to the same channel as the message
-		message.channel.send(embed);
+		message.channel.send(GoEmbed);
 	  }
 	})
   
@@ -222,10 +161,68 @@ client.on('message', message => {
 
 
 
-//ground cmd
-//ground cmd
 
+client.on('message', message => {
+
+  	if (message.content.startsWith('|ground')) {
+		if (message.author.bot) return;
+		  
+	  const user = message.mentions.users.first();
+	  if (user) {
+		const member = message.guild.member(user);
+		
+		if (member) {
+
+		  message.channel.send(`${user} is gunsis they wil go 2 dare room  `).then(() => {
+
+			
+		  }).catch(err => {
+
+			message.reply('i cant ground him');
+
+			console.error(err);
+		  });
+		} else {
+		
+		  message.reply('That user isn\'t in this guild!');
+		}
+	
+	  } else {
+		message.reply('mention who you are grounding you cant ground nobody');
+	  }
+	}
+  });
   
+
+  client.on('message', message => {
+
+	if (message.content.startsWith('|unground')) {
+		
+	const user = message.mentions.users.first();
+	if (user) {
+	  const member = message.guild.member(user);
+	  
+	  if (member) {
+
+		message.channel.send(`${user} is ungunsis pog they wil go 2 dare room  `).then(() => {
+
+		  
+		}).catch(err => {
+
+		  message.reply('I was unable to ground the member');
+
+		  console.error(err);
+		});
+	  } else {
+	  
+		message.reply('That user isn\'t in this guild!');
+	  }
+  
+	} else {
+	  message.reply('mention who you are ungrounding you cant ground nobody');
+	}
+  }
+});
 
 
 
@@ -240,100 +237,67 @@ client.on('message', message => {
 	
 	if (message.content === '|help') {
 
-	  const embed = new RichEmbed()
+		const GoEmbed = new Discord.MessageEmbed()
 		// Set the title of the field
-		.setTitle('GoAnibot')
+		.setTitle('GoAnibot V2')
 		// Set the color of the embed
-		.setColor(0xFF0000)
+		.setColor('RANDOM')
 		// Set the main content of the embed
-        .setDescription('Bot made by 2Epik4u fun: |mjdance       |epikdance         |hiddencake   |cyandance    |avatar |say (not coded in yet)   |ground  |unground |gotestdance');
+		.setURL('https://discord.gg/PGHtMp7')
+		.setAuthor('GoAnibot', 'https://cdn.discordapp.com/attachments/783855479528882236/790600489820880967/goanibot_v2.png', 'https://discord.com/oauth2/authorize?client_id=628607192806981632&scope=bot&permissions=60416')
+		.setDescription('Welcome to GoAnibot')
+		.setThumbnail('https://cdn.discordapp.com/attachments/783855479528882236/790600489820880967/goanibot_v2.png')
+		.addFields(
+			{ name: '|epikdance', value: 'Makes 2Epik4u Dance' },
+			{ name: '|mjdance', value: 'Shows MJ Dancing', inline: true },
+			{ name: '|hiddencake', value: 'Gives you a free hidden cake!', inline: true },
+		)
+		.addField('|gotestdance', 'GoTest dancing', true)
+		.setImage('https://cdn.discordapp.com/attachments/783855479528882236/790600489820880967/goanibot_v2.png')
+		.setTimestamp()
+		.setFooter('do |help2 for second page of help', 'https://cdn.discordapp.com/attachments/783855479528882236/790600489820880967/goanibot_v2.png');
 	  // Send the embed to the same channel as the message
-	  message.channel.send(embed);
+	  message.channel.send(GoEmbed);
+
 	}
   });
   
+  client.on('message', message => {
+	
+	if (message.content === '|help2') {
 
+		const GoEmbed = new Discord.MessageEmbed()
+		// Set the title of the field
+		.setTitle('GoAnibot V2')
+		// Set the color of the embed
+		.setColor('RANDOM')
+		// Set the main content of the embed
+		.setURL('https://discord.gg/PGHtMp7')
+		.setAuthor('GoAnibot', 'https://cdn.discordapp.com/attachments/783855479528882236/790600489820880967/goanibot_v2.png', 'https://discord.com/oauth2/authorize?client_id=628607192806981632&scope=bot&permissions=60416')
+		.setDescription('Welcome to GoAnibot')
 
+		.addFields(
+			{ name: '|lemondance', value: 'dancing lemon O_O' },
+			{ name: '|ground', value: 'Ground people', inline: true },
+			{ name: '|hiddencake', value: 'Gives you a free hidden cake!', inline: true },
+		)
+		.addField('|gotestdance', 'GoTest dancing', true)
 
+		.setTimestamp()
+	
+	  // Send the embed to the same channel as the message
+	  message.channel.send(GoEmbed);
 
-client.on('message', message => {
-
-	if (message.content === '|avatar') {
-	  // Send the user's avatar URL
-	  message.reply(message.author.avatarURL);
 	}
   });
 
+
+
+
+
+
+
 // make bot say a thing
-// make bot say a thing
-client.on("message", async message => {
-    if (message.author.bot) return;
-	if ((['MANAGE_MESSAGES', 'BAN_MEMBERS']))  return
-    if (message.content.startsWith("|say ")) { // prefix
-        message.delete(1); // Supposed to delete message
-        message.channel.send(message.content.slice(4, message.content.length));
-    }
-});
-// bot autoresponds
-client.on('message', msg => {
 
-
-
-	// includes responds
-	if (msg.content.includes('Can 2Epik4u be grounded')) {
-		msg.reply('no because hes my dad and hes god :rage:');
-	} 
-
-	
-	if (msg.content.includes('can 2epik4u be grounded')) {
-		msg.reply('no because hes my dad and hes god :rage:');
-	}
-	if (msg.content.includes('Can 2epik4u be grounded')) {
-		msg.reply('no because hes my dad and hes god :rage:');
-	}
-	if (msg.content.includes('Can 2epik be grounded')) {
-		msg.reply('no because hes my dad and hes god :rage:');
-	}
-
-
-	
-
-	
-
-	
-	
-
-	if (msg.content === 'your grounded' ) {
-		msg.reply('no u')
-	}
-	if (msg.content === 'uoillac' ) {
-		msg.reply('washington aaaaaaaaaaaaaaaaaa')
-	}
-	
-
-	if (msg.startsWith === '|shutup' ) {
-		msg.reply('no')
-	}
-	if (msg.startsWith === '|ground' ) {
-		msg.reply('That command has been deleted.')
-	}
-	if (msg.startsWith === '|unground' ) {
-		msg.reply('That command has been deleted.')
-	}
-	if (msg.content === 'mj:online' ) {
-		msg.reply('yes, but epik denies it...')
-	}
-   
-	
-	
-
-
-	
-	   if (msg.content === 'can mj be grounded' ) {
-		msg.reply('how dare you want MJ to be grunses thats it you are grounded until hell freezes over now go to washington aaaaaaaaaaaa')
-	}
-
-});
 // bot token login
 client.login(config.token)
-
