@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+# Dont commit my mac shit
+.DS_Store
+.DS_Store
