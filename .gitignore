@@ -105,3 +105,4 @@ dist
 # Dont commit my mac shit
 .DS_Store
 .DS_Store
+config.json
