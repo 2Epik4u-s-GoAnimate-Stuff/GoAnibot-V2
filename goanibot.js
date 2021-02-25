@@ -173,7 +173,7 @@ client.on('message', message => {
 		
 		if (member) {
 
-		  message.channel.send(`${user} is gunsis they wil go 2 dare room  `).then(() => {
+		  message.channel.send(`${user} is grounded grounded grounded grounded grounded for infinity years. Now ${user} Go to your room right now! `).then(() => {
 
 			
 		  }).catch(err => {
