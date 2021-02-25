@@ -3,7 +3,7 @@
   "description": "A Node.js app which communicates with Discord api",
   "version": "2.0.0",
   "homepage": "https://discord.gg/PGHtMp7",
-  "license": "MIT",
+  "license": "BSD 3-Clause",
   "private": true,
   "scripts": {
     "start": "node goanibot.js"
