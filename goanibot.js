@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require('./config.json');
-const prefix = '|'
+
 
 
 client.on("ready", () =>{
@@ -125,8 +125,8 @@ client.on('message', message => {
 		const GoEmbed = new Discord.MessageEmbed()
 		
 		  .setTitle('Woah is that MJ the spirit dancing')
-		  .attachFiles(['https://cdn.discordapp.com/attachments/757778344900034560/783863755209572362/ezgif-5-3af8a77a80ce.gif'])
-		  .setDescription('cool!!')
+		  .attachFiles(['https://cdn.discordapp.com/attachments/723742491433500782/814524663597498368/60fpsmj-4x-RIFE.gif'])
+		  .setDescription('how does he dance so smooth 😳😳')
 		  // Set the color of the embed
 		  .setColor(0xFC8C06)
 		  // Set the main content of the embed
