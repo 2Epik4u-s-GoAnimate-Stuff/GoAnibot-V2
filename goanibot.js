@@ -297,8 +297,6 @@ client.on('message', message => {
 client.on('message', msg => {
  if (msg.content.includes('!ground')) {
   msg.reply('did you mean ground?');
-	 
-});
 // make bot say a thing
 
 // bot token login
