@@ -17,10 +17,6 @@ client.on("ready", () =>{
 
 
 // did you mean |ground
-client.on('message', msg => {
- if (msg.content.includes('!ground')) {
-  msg.reply('did you mean ground?');
- };
 // Prefix (|) Website: 2epik4u.tk/goanibot Discord: 2epik4u.tk/2epik4u
 client.on('message', message => {
 	if (message.content === '|ragecookie') {
