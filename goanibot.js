@@ -9,7 +9,7 @@ client.on("ready", () =>{
 	client.user.setPresence({
 			status: "online",  //You can show online, idle....
 			game: {
-					name: "Goanibot is in full release pog",  //The message shown
+					name: (config.status),  //The message shown
 					type: "PLAYING" //PLAYING: WATCHING: LISTENING: STREAMING:
 			}
 	});
