@@ -255,7 +255,6 @@ client.on('message', message => {
 		.setURL('https://discord.gg/PGHtMp7')
 		.setAuthor('GoAnibot', 'https://cdn.discordapp.com/attachments/783855479528882236/790600489820880967/goanibot_v2.png', 'https://discord.com/oauth2/authorize?client_id=628607192806981632&scope=bot&permissions=60416')
 		.setDescription('Welcome to GoAnibot')
-		.setThumbnail('https://cdn.discordapp.com/attachments/783855479528882236/790600489820880967/goanibot_v2.png')
 		.addFields(
 			{ name: '|epikdance', value: 'Makes 2Epik4u Dance' },
 			{ name: '|mjdance', value: 'Shows MJ Dancing', inline: true },
@@ -267,7 +266,7 @@ client.on('message', message => {
 		.addField('|gotestdance', 'GoTest dancing', true)
 		.setImage('https://cdn.discordapp.com/attachments/783855479528882236/790600489820880967/goanibot_v2.png')
 		.setTimestamp()
-		.setFooter('do |help2 for second page of help', 'https://cdn.discordapp.com/attachments/783855479528882236/790600489820880967/goanibot_v2.png');
+		.setFooter('Made by 2Epik4u', 'https://cdn.discordapp.com/attachments/783855479528882236/790600489820880967/goanibot_v2.png');
 	  // Send the embed to the same channel as the message
 	  message.channel.send(GoEmbed);
 
