@@ -9,7 +9,9 @@ client.on("ready", () =>{
 	client.user.setActivity(config.status), { type: 'PLAYING' }
 })
 
-
+// working on banned command
+// client.on('message', message => {
+//	if (message.author.id) === banned.banned 
 
 // did you mean |ground
 // Prefix (|) Website: 2epik4u.tk/goanibot Discord: 2epik4u.tk/2epik4u
