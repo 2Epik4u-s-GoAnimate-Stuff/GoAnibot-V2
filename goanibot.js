@@ -16,7 +16,10 @@ client.on("ready", () =>{
 // did you mean |ground
 // Prefix (|) Website: 2epik4u.tk/goanibot Discord: 2epik4u.tk/2epik4u
 client.on('message', message => {
+	if(message.author.id === "569341656449548290" return;
+	   
 	if (message.content === '|ragecookie') {
+		
 
 		const GoEmbed = new Discord.MessageEmbed()
 	  
@@ -38,6 +41,7 @@ client.on('message', message => {
 
   // gotest dance
   client.on('message', message => {
+	  if(message.author.id === "569341656449548290" return;
 	  
 	  if (message.content === '|gotestdance') {
   
@@ -58,6 +62,8 @@ client.on('message', message => {
   
   // cake
   client.on('message', message => {
+	  
+	  if(message.author.id === "569341656449548290" return;
   
 	  if (message.content === '|hiddencake') {
   
@@ -77,6 +83,8 @@ client.on('message', message => {
   
 	//epik dancing
 	client.on('message', message => {
+		
+		if(message.author.id === "569341656449548290" return;
   
 	  if (message.content === '|epikdance') {
   
@@ -95,6 +103,7 @@ client.on('message', message => {
 	  }
 	})
 	client.on('message', message => {
+		if(message.author.id === "569341656449548290" return;
   
 		if (message.content === '|lemondance') {
 	
@@ -116,6 +125,8 @@ client.on('message', message => {
   
   //mj dancing angry
   client.on('message', message => {
+	  
+	  if(message.author.id === "569341656449548290" return;
   
 	  if (message.content === '|mjdance') {
   
@@ -137,6 +148,7 @@ client.on('message', message => {
   
 	//cyan dance
 	client.on('message', message => {
+	  if(message.author.id === "569341656449548290" return;
   
 	  if (message.content === '|cyandance') {
   
@@ -160,6 +172,8 @@ client.on('message', message => {
 
 
 client.on('message', message => {
+	
+	if(message.author.id === "569341656449548290" return;
 
   	if (message.content.startsWith('|ground')) {
 		if (message.author.bot) return;
@@ -170,7 +184,7 @@ client.on('message', message => {
 		
 		if (member) {
 
-		  message.channel.send(`${user} is grounded grounded grounded grounded grounded for infinity years. Now ${user} Go to your room right now! `).then(() => {
+		  message.channel.send(`${user.tag} is grounded grounded grounded grounded grounded for infinity years. Now ${user.tag} Go to your room right now! `).then(() => {
 
 			
 		  }).catch(err => {
@@ -192,6 +206,7 @@ client.on('message', message => {
   
 
   client.on('message', message => {
+	 if(message.author.id === "569341656449548290" return;
 
 	if (message.content.startsWith('|unground')) {
 		
@@ -201,7 +216,7 @@ client.on('message', message => {
 	  
 	  if (member) {
 
-		message.channel.send(`${user} is ungunsis pog they wil go 2 dare room  `).then(() => {
+		message.channel.send(`${user.tag} is ungunsis pog they wil go 2 dare room  `).then(() => {
 
 		  
 		}).catch(err => {
@@ -231,6 +246,7 @@ client.on('message', message => {
 
 //discord help command
 client.on('message', message => {
+	if(message.author.id === "569341656449548290" return;
 	
 	if (message.content === '|help') {
 
@@ -260,6 +276,7 @@ client.on('message', message => {
   });
   
   client.on('message', message => {
+	  if(message.author.id === "569341656449548290" return;
 	
 	if (message.content === '|help2') {
 
