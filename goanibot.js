@@ -6,14 +6,8 @@ const config = require('./config.json');
 
 client.on("ready", () =>{
 	console.log(`Logged in as ${client.user.tag}!`);
-	client.user.setPresence({
-			status: "online",  //You can show online, idle....
-			game: {
-					name: (config.status),  //The message shown
-					type: "PLAYING" //PLAYING: WATCHING: LISTENING: STREAMING:
-			}
-	});
-});
+	client.user.setActivity(config.status), { type: 'PLAYING' });
+
 
 
 // did you mean |ground
