@@ -294,10 +294,11 @@ client.on('message', message => {
 
 
 // did you mean |ground
-if (message.content.startsWith('!ground')) {
-	message.reply('Did you mean |Ground')
-
-}
+client.on('message', msg => {
+ if (msg.content.includes('!ground')) {
+  msg.reply('did you mean ground?');
+	 
+});
 // make bot say a thing
 
 // bot token login
