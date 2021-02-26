@@ -293,10 +293,11 @@ client.on('message', message => {
 
 
 
+// did you mean |ground
+if (message.content.startsWith('!ground')) {
+	message.reply('Did you mean |Ground')
 
-
-
-
+}
 // make bot say a thing
 
 // bot token login
