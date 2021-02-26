@@ -12,14 +12,13 @@ client.on("ready", () =>{
 // working on banned command
 // client.on('message', message => {
 //	if (message.author.id) === banned.banned 
-
 // did you mean |ground
 // Prefix (|) Website: 2epik4u.tk/goanibot Discord: 2epik4u.tk/2epik4u
 client.on('message', message => {
 	
 	   
 	if (message.content === '|ragecookie') { 
-		if(message.author.id === "569341656449548290")  return message.reply("You are banned from using GoAnibot.");
+		if(message.author.id === "569341656449548290")  return message.reply("You are banned from using GoAnibot."); // this ban thingy CAN be improved since its prob gonna be like a little slower since it checks if the id is sodadrinkers id but whatever its worth it.
 
 		const GoEmbed = new Discord.MessageEmbed()
 	  
@@ -261,6 +260,9 @@ client.on('message', message => {
 			{ name: '|epikdance', value: 'Makes 2Epik4u Dance' },
 			{ name: '|mjdance', value: 'Shows MJ Dancing', inline: true },
 			{ name: '|hiddencake', value: 'Gives you a free hidden cake!', inline: true },
+			{ name: '|lemondance', value: 'dancing lemon O_O' },
+			{ name: '|ground', value: 'Ground people', inline: true },
+			{ name: '|hiddencake', value: 'Gives you a free hidden cake!', inline: true }
 		)
 		.addField('|gotestdance', 'GoTest dancing', true)
 		.setImage('https://cdn.discordapp.com/attachments/783855479528882236/790600489820880967/goanibot_v2.png')
@@ -272,35 +274,6 @@ client.on('message', message => {
 	}
   });
   
-  client.on('message', message => {
-	if(message.author.id === "569341656449548290")  return message.reply("You are banned from using GoAnibot.");
-	
-	if (message.content === '|help2') {
-
-		const GoEmbed = new Discord.MessageEmbed()
-		// Set the title of the field
-		.setTitle('GoAnibot V2')
-		// Set the color of the embed
-		.setColor('RANDOM')
-		// Set the main content of the embed
-		.setURL('https://discord.gg/PGHtMp7')
-		.setAuthor('GoAnibot', 'https://cdn.discordapp.com/attachments/783855479528882236/790600489820880967/goanibot_v2.png', 'https://discord.com/oauth2/authorize?client_id=628607192806981632&scope=bot&permissions=60416')
-		.setDescription('Welcome to GoAnibot')
-
-		.addFields(
-			{ name: '|lemondance', value: 'dancing lemon O_O' },
-			{ name: '|ground', value: 'Ground people', inline: true },
-			{ name: '|hiddencake', value: 'Gives you a free hidden cake!', inline: true },
-		)
-		.addField('|gotestdance', 'GoTest dancing', true)
-
-		.setTimestamp()
-	
-	  // Send the embed to the same channel as the message
-	  message.channel.send(GoEmbed);
-
-	}
-  });
 
 
 
