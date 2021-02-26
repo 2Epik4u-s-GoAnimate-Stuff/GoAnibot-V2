@@ -18,7 +18,7 @@ client.on('message', message => {
 	
 	   
 	if (message.content === '|ragecookie') { 
-		if(message.author.id === "569341656449548290")  return message.reply("You are banned from using GoAnibot."); // this ban thingy CAN be improved since its prob gonna be like a little slower since it checks if the id is sodadrinkers id but whatever its worth it.
+		if(message.author.id === "569341656449548290")  return;
 
 		const GoEmbed = new Discord.MessageEmbed()
 	  
@@ -44,7 +44,7 @@ client.on('message', message => {
 	  
 	  
 	  if (message.content === '|gotestdance') {
-		if(message.author.id === "569341656449548290")  return message.reply("You are banned from using GoAnibot.");
+		if(message.author.id === "569341656449548290")  return;
   
 		const GoEmbed = new Discord.MessageEmbed()
 		
@@ -65,7 +65,7 @@ client.on('message', message => {
   client.on('message', message => {
 	  
 	if (message.content === '|hiddencake') {
-		if(message.author.id === "569341656449548290")  return message.reply("You are banned from using GoAnibot.");
+		if(message.author.id === "569341656449548290")  return;
   
 		const GoEmbed = new Discord.MessageEmbed()
 		
@@ -85,7 +85,7 @@ client.on('message', message => {
 	client.on('message', message => {
 		
 	 if (message.content === '|epikdance') {
-		if(message.author.id === "569341656449548290")  return message.reply("You are banned from using GoAnibot.");
+		if(message.author.id === "569341656449548290")  return;
   
 		const GoEmbed = new Discord.MessageEmbed()
 		
@@ -104,7 +104,7 @@ client.on('message', message => {
 	client.on('message', message => {
 
 		if (message.content === '|lemondance') {
-			if(message.author.id === "569341656449548290")  return message.reply("You are banned from using GoAnibot.");
+			if(message.author.id === "569341656449548290")  return;
 			const GoEmbed = new Discord.MessageEmbed()
 		  
 			.setTitle('Cushion Poggers Dancing!!!!')
@@ -124,7 +124,7 @@ client.on('message', message => {
   //mj dancing angry
   client.on('message', message => {
 	  if (message.content === '|mjdance') {
-		if(message.author.id === "569341656449548290")  return message.reply("You are banned from using GoAnibot.");
+		if(message.author.id === "569341656449548290")  return;
 		const GoEmbed = new Discord.MessageEmbed()
 		
 		  .setTitle('Woah is that MJ the spirit dancing')
@@ -146,7 +146,7 @@ client.on('message', message => {
 	  
   
 	  if (message.content === '|cyandance') {
-		if(message.author.id === "569341656449548290")  return message.reply("You are banned from using GoAnibot.");
+		if(message.author.id === "569341656449548290")  return;
   
 		const GoEmbed = new Discord.MessageEmbed()
 		
@@ -170,7 +170,7 @@ client.on('message', message => {
 client.on('message', message => {
 	
 	if (message.content.startsWith('|ground')) {
-		if(message.author.id === "569341656449548290")  return message.reply("You are banned from using GoAnibot.");
+		if(message.author.id === "569341656449548290")  return;
 		if (message.author.bot) return;
 		  
 	  const user = message.mentions.users.first();
@@ -204,7 +204,7 @@ client.on('message', message => {
 	
 
 	if (message.content.startsWith('|unground')) {
-	if(message.author.id === "569341656449548290")  return message.reply("You are banned from using GoAnibot.");
+	if(message.author.id === "569341656449548290")  return;
 		
 	const user = message.mentions.users.first();
 	if (user) {
@@ -242,7 +242,7 @@ client.on('message', message => {
 
 //discord help command
 client.on('message', message => {
-	if(message.author.id === "569341656449548290")  return message.reply("You are banned from using GoAnibot.");
+	if(message.author.id === "569341656449548290")  return;
 	
 	if (message.content === '|help') {
 
