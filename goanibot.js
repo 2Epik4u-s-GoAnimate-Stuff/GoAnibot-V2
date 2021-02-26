@@ -252,8 +252,8 @@ client.on('message', message => {
 		// Set the color of the embed
 		.setColor('RANDOM')
 		// Set the main content of the embed
-		.setURL('https://discord.gg/PGHtMp7')
-		.setAuthor('GoAnibot', 'https://cdn.discordapp.com/attachments/783855479528882236/790600489820880967/goanibot_v2.png', 'https://discord.com/oauth2/authorize?client_id=628607192806981632&scope=bot&permissions=60416')
+		.setURL('https://discord.com/oauth2/authorize?client_id=628607192806981632&scope=bot&permissions=6041')
+		.setAuthor('GoAnibot', 'https://cdn.discordapp.com/attachments/783855479528882236/790600489820880967/goanibot_v2.png', 'https://2epik4u.xyz')
 		.setDescription('Welcome to GoAnibot')
 		.addFields(
 			{ name: '|epikdance', value: 'Makes 2Epik4u Dance' },
