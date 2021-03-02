@@ -123,7 +123,7 @@ client.on('message', message => {
   
   //mj dancing angry
   client.on('message', message => {
-	  if message.content === '|mjdance') {
+	  if (message.content === '|mjdance') {
 		if (message.author.id === "569341656449548290")  return;
 		const GoEmbed = new Discord.MessageEmbed()
 		
