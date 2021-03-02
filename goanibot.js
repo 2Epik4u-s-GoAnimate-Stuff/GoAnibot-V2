@@ -272,16 +272,22 @@ client.on('message', message => {
 
 	}
   });
-  
+// if it uses | prefix, then respond
+
+client.on('message', message => {
+
+	if (message.content.startsWith("|")) {
+	message.channel.send('prefix is now "ga " with a space.')
+	
+}
 
 // respond if pinged
-client.on("message", message => {
     if (message.author.bot) return false;
 
     if (message.content.includes("@here") || message.content.includes("@everyone")) return false;
 
     if (message.mentions.has(client.user.id)) {
-        message.reply('prefix is "ga " with a space.');
+        message.channel.send('prefix is "ga " with a space.');
     };
 });
 	 
