@@ -14,10 +14,12 @@ client.on("ready", () =>{
 //	if (message.author.id) === banned.banned 
 // did you mean |
 // Prefix (|) Website: 2epik4u.tk/goanibot Discord: 2epik4u.tk/2epik4u
+
+
 client.on('message', message => {
 	
 	   
-	if (message.content === '|ragecookie') { 
+	if (message.content.toLowerCase().startsWith(config.prefix + "ragecookie")) {
 		if (message.author.id === "569341656449548290")  return;
 
 		const GoEmbed = new Discord.MessageEmbed()
@@ -43,7 +45,7 @@ client.on('message', message => {
   client.on('message', message => {
 	  
 	  
-	  if (message.content === '|gotestdance') {
+	if (message.content.toLowerCase().startsWith(config.prefix + "gotestdance")) {
 		if (message.author.id === "569341656449548290")  return;
   
 		const GoEmbed = new Discord.MessageEmbed()
@@ -64,7 +66,7 @@ client.on('message', message => {
   // cake
   client.on('message', message => {
 	  
-	if (message.content === '|hiddencake') {
+	if (message.content.toLowerCase().startsWith(config.prefix + "hiddencake")) {
 		if (message.author.id === "569341656449548290")  return;
   
 		const GoEmbed = new Discord.MessageEmbed()
@@ -84,14 +86,14 @@ client.on('message', message => {
 	//epik dancing
 	client.on('message', message => {
 		
-	 if (message.content === '|epikdance') {
+		if (message.content.toLowerCase().startsWith(config.prefix + "epikdance")) {
 		if(message.author.id === "569341656449548290")  return;
   
 		const GoEmbed = new Discord.MessageEmbed()
 		
 		  .setTitle('Here is 2Epik4u Dancing!')
 		  .attachFiles(['https://cdn.discordapp.com/attachments/740797420744474734/746628859784331304/epikdance.gif'])
-		  .setDescription('What a LOSER!')
+		  .setDescription('😎😎😎!')
 		  
 		  // Set the color of the embed
 		  .setColor(0x1653C1)
@@ -103,7 +105,7 @@ client.on('message', message => {
 	})
 	client.on('message', message => {
 
-		if (message.content === '|lemondance') {
+		if (message.content.toLowerCase().startsWith(config.prefix + "poggerdance")) {
 			if(message.author.id === "569341656449548290")  return;
 			const GoEmbed = new Discord.MessageEmbed()
 		  
@@ -121,9 +123,9 @@ client.on('message', message => {
 	  })
   
   
-  //mj dancing angry
+  //mj dancing
   client.on('message', message => {
-	  if (message.content === '|mjdance') {
+	if (message.content.toLowerCase().startsWith(config.prefix + "mjdance")) {
 		if (message.author.id === "569341656449548290")  return;
 		const GoEmbed = new Discord.MessageEmbed()
 		
@@ -145,7 +147,7 @@ client.on('message', message => {
 	client.on('message', message => {
 	  
   
-	  if (message.content === '|cyandance') {
+		if (message.content.toLowerCase().startsWith(config.prefix + "cyandance")) {
 		if (message.author.id === "569341656449548290")  return;
   
 		const GoEmbed = new Discord.MessageEmbed()
@@ -168,7 +170,7 @@ client.on('message', message => {
 
 client.on('message', message => {
 	
-	if (message.content.startsWith('|ground')) {
+	if (message.content.toLowerCase().startsWith(config.prefix + "ground")) {
 		if(message.author.id === "569341656449548290")  return;
 		if (message.author.bot) return;
 		  
@@ -202,7 +204,7 @@ client.on('message', message => {
   client.on('message', message => {
 	
 
-	if (message.content === ('|unground')) {
+	if (message.content.startsWith(config.prefix + "unground")) {
 	if(message.author.id === "569341656449548290")  return;
 		
 	const user = message.mentions.users.first();
@@ -211,7 +213,7 @@ client.on('message', message => {
 	  
 	  if (member) {
 
-		message.channel.send(`${user.tag} is ungunsis pog they wil go 2 dare room  `).then(() => {
+		message.channel.send(`${user.tag} is ungrounded 😃😃😃`).then(() => {
 
 		  
 		}).catch(err => {
@@ -237,13 +239,13 @@ client.on('message', message => {
 
 
 
-//unground command
 
 //discord help command
 client.on('message', message => {
 	if(message.author.id === "569341656449548290")  return;
 	
-	if (message.content === '|help') {
+		
+		if (message.content.toLowerCase().startsWith(config.prefix + "help")) {
 
 		const GoEmbed = new Discord.MessageEmbed()
 		// Set the title of the field
@@ -255,15 +257,14 @@ client.on('message', message => {
 		.setAuthor('GoAnibot', 'https://cdn.discordapp.com/attachments/783855479528882236/790600489820880967/goanibot_v2.png', 'https://2epik4u.xyz')
 		.setDescription('Welcome to GoAnibot')
 		.addFields(
-			{ name: '|epikdance', value: 'Makes 2Epik4u Dance' },
-			{ name: '|mjdance', value: 'Shows MJ Dancing', inline: true },
-			{ name: '|hiddencake', value: 'Gives you a free hidden cake!', inline: true },
-			{ name: '|lemondance', value: 'dancing lemon O_O' },
-			{ name: '|ground', value: 'Ground people', inline: true },
-			{ name: '|hiddencake', value: 'Gives you a free hidden cake!', inline: true }
+			{ name: 'ga epikdance', value: 'Makes 2Epik4u Dance' },
+			{ name: 'ga mjdance', value: 'Shows MJ Dancing', inline: true },
+			{ name: 'ga hiddencake', value: 'Gives you a free hidden cake!', inline: true },
+			{ name: 'ga lemondance', value: 'dancing lemon O_O' },
+			{ name: 'ga ground', value: 'Ground people', inline: true },
+			{ name: 'ga hiddencake', value: 'Gives you a free hidden cake!', inline: true }
 		)
 		.addField('|gotestdance', 'GoTest dancing', true)
-		.setImage('https://cdn.discordapp.com/attachments/783855479528882236/790600489820880967/goanibot_v2.png')
 		.setTimestamp()
 		.setFooter('Made by 2Epik4u', 'https://cdn.discordapp.com/attachments/783855479528882236/790600489820880967/goanibot_v2.png');
 	  // Send the embed to the same channel as the message
@@ -273,16 +274,21 @@ client.on('message', message => {
   });
   
 
+// respond if pinged
+client.on("message", message => {
+    if (message.author.bot) return false;
 
+    if (message.content.includes("@here") || message.content.includes("@everyone")) return false;
 
-
+    if (message.mentions.has(client.user.id)) {
+        message.reply('prefix is "ga " with a space.');
+    };
+});
 	 
 // make bot say a thing
  client.on("message", async message => {
     if (message.author.bot) return;
-
-    if (message.content.startsWith("|say ")) { // prefix
-        message.delete(1); // Supposed to delete message
+	if (message.content.toLowerCase().startsWith(config.prefix + "say")) {		
         message.channel.send(message.content.slice(4, message.content.length));
     }
 });
