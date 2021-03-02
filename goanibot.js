@@ -17,7 +17,7 @@ client.on("ready", () =>{
 client.on('message', message => {
 	
 	   
-	if (message.content === '|ragecookie') { 
+	if (message.content.startsWith === '|ragecookie') { 
 		if(message.author.id === "569341656449548290")  return;
 
 		const GoEmbed = new Discord.MessageEmbed()
@@ -43,7 +43,7 @@ client.on('message', message => {
   client.on('message', message => {
 	  
 	  
-	  if (message.content === '|gotestdance') {
+	  if (message.content.startsWith === '|gotestdance') {
 		if(message.author.id === "569341656449548290")  return;
   
 		const GoEmbed = new Discord.MessageEmbed()
@@ -84,7 +84,7 @@ client.on('message', message => {
 	//epik dancing
 	client.on('message', message => {
 		
-	 if (message.content === '|epikdance') {
+	 if (message.content.startsWith=== '|epikdance') {
 		if(message.author.id === "569341656449548290")  return;
   
 		const GoEmbed = new Discord.MessageEmbed()
@@ -103,7 +103,7 @@ client.on('message', message => {
 	})
 	client.on('message', message => {
 
-		if (message.content === '|lemondance') {
+		if (message.content.startsWith === '|lemondance') {
 			if(message.author.id === "569341656449548290")  return;
 			const GoEmbed = new Discord.MessageEmbed()
 		  
@@ -123,7 +123,7 @@ client.on('message', message => {
   
   //mj dancing angry
   client.on('message', message => {
-	  if (message.content === '|mjdance') {
+	  if (message.content.startsWith === '|mjdance') {
 		if(message.author.id === "569341656449548290")  return;
 		const GoEmbed = new Discord.MessageEmbed()
 		
@@ -145,7 +145,7 @@ client.on('message', message => {
 	client.on('message', message => {
 	  
   
-	  if (message.content === '|cyandance') {
+	  if (message.content.startsWith === '|cyandance') {
 		if(message.author.id === "569341656449548290")  return;
   
 		const GoEmbed = new Discord.MessageEmbed()
@@ -244,7 +244,7 @@ client.on('message', message => {
 client.on('message', message => {
 	if(message.author.id === "569341656449548290")  return;
 	
-	if (message.content === '|help') {
+	if (message.content.startsWith === '|help') {
 
 		const GoEmbed = new Discord.MessageEmbed()
 		// Set the title of the field
@@ -279,6 +279,10 @@ client.on('message', message => {
 
 	 
 // make bot say a thing
-
+if(message.content.startsWith === "say"){
+  let text = args.join(" ");
+  message.delete();
+  message.channel.send(text);
+}
 // bot token login
 client.login(config.token)
