@@ -257,14 +257,14 @@ client.on('message', message => {
 		.setAuthor('GoAnibot', 'https://cdn.discordapp.com/attachments/783855479528882236/790600489820880967/goanibot_v2.png', 'https://2epik4u.xyz')
 		.setDescription('Welcome to GoAnibot')
 		.addFields(
-			{ name: 'ga epikdance', value: 'Makes 2Epik4u Dance' },
-			{ name: 'ga mjdance', value: 'Shows MJ Dancing', inline: true },
-			{ name: 'ga hiddencake', value: 'Gives you a free hidden cake!', inline: true },
-			{ name: 'ga lemondance', value: 'dancing lemon O_O' },
-			{ name: 'ga ground', value: 'Ground people', inline: true },
-			{ name: 'ga hiddencake', value: 'Gives you a free hidden cake!', inline: true }
+			{ name: 'epikdance', value: 'Makes 2Epik4u Dance' },
+			{ name: 'mjdance', value: 'Shows MJ Dancing', inline: true },
+			{ name: 'hiddencake', value: 'Gives you a free hidden cake!', inline: true },
+			{ name: 'lemondance', value: 'dancing lemon O_O' },
+			{ name: 'ground', value: 'Ground people', inline: true },
+			{ name: 'hiddencake', value: 'Gives you a free hidden cake!', inline: true }
 		)
-		.addField('|gotestdance', 'GoTest dancing', true)
+		.addField('gotestdance', 'GoTest dancing', true)
 		.setTimestamp()
 		.setFooter('Made by 2Epik4u', 'https://cdn.discordapp.com/attachments/783855479528882236/790600489820880967/goanibot_v2.png');
 	  // Send the embed to the same channel as the message
