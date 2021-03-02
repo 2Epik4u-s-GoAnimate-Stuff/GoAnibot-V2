@@ -295,7 +295,7 @@ client.on('message', message => {
  client.on("message", async message => {
     if (message.author.bot) return;
 	if (message.content.toLowerCase().startsWith(config.prefix + "say")) {		
-        message.channel.send(message.content.slice(4, message.content.length));
+        message.channel.send(message.content.slice(6, message.content.length));
     }
 });
 // bot token login
