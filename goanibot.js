@@ -285,6 +285,6 @@ client.on('message', message => {
   let text = args.join(" ");
   message.delete();
   message.channel.send(text);
-}
+})
 // bot token login
 client.login(config.token)
