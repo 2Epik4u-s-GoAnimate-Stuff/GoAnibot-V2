@@ -279,12 +279,13 @@ client.on('message', message => {
 
 	 
 // make bot say a thing
-client.on('message', message => {
-
-  if (message.content === "say"){
-  let text = args.join(" ");
-  message.delete();
-  message.channel.send(text);
-})
+ client.on("message", async message => {
+    if (message.author.bot) return;
+	if ((['MANAGE_MESSAGES', 'BAN_MEMBERS']))  return;
+    if (message.content.startsWith("|say ")) { // prefix
+        message.delete(1); // Supposed to delete message
+        message.channel.send(message.content.slice(4, message.content.length));
+    }
+});
 // bot token login
 client.login(config.token)
