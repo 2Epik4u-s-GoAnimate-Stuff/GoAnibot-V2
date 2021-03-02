@@ -18,7 +18,7 @@ client.on('message', message => {
 	
 	   
 	if (message.content.startsWith === '|ragecookie') { 
-		if(message.author.id === "569341656449548290")  return;
+		if (message.author.id === "569341656449548290")  return;
 
 		const GoEmbed = new Discord.MessageEmbed()
 	  
@@ -44,7 +44,7 @@ client.on('message', message => {
 	  
 	  
 	  if (message.content.startsWith === '|gotestdance') {
-		if(message.author.id === "569341656449548290")  return;
+		if (message.author.id === "569341656449548290")  return;
   
 		const GoEmbed = new Discord.MessageEmbed()
 		
@@ -65,7 +65,7 @@ client.on('message', message => {
   client.on('message', message => {
 	  
 	if (message.content === '|hiddencake') {
-		if(message.author.id === "569341656449548290")  return;
+		if (message.author.id === "569341656449548290")  return;
   
 		const GoEmbed = new Discord.MessageEmbed()
 		
@@ -124,7 +124,7 @@ client.on('message', message => {
   //mj dancing angry
   client.on('message', message => {
 	  if (message.content.startsWith === '|mjdance') {
-		if(message.author.id === "569341656449548290")  return;
+		if (message.author.id === "569341656449548290")  return;
 		const GoEmbed = new Discord.MessageEmbed()
 		
 		  .setTitle('Woah is that MJ the spirit dancing')
@@ -146,7 +146,7 @@ client.on('message', message => {
 	  
   
 	  if (message.content.startsWith === '|cyandance') {
-		if(message.author.id === "569341656449548290")  return;
+		if (message.author.id === "569341656449548290")  return;
   
 		const GoEmbed = new Discord.MessageEmbed()
 		
@@ -170,7 +170,7 @@ client.on('message', message => {
 client.on('message', message => {
 	
 	if (message.content.startsWith('|ground')) {
-		if(message.author.id === "569341656449548290")  return;
+		if (message.author.id === "569341656449548290")  return;
 		if (message.author.bot) return;
 		  
 	  const user = message.mentions.users.first();
@@ -279,7 +279,7 @@ client.on('message', message => {
 
 	 
 // make bot say a thing
-if(message.content.startsWith === "say"){
+if (message.content.startsWith === "say"){
   let text = args.join(" ");
   message.delete();
   message.channel.send(text);
