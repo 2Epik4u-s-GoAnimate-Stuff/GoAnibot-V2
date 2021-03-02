@@ -260,7 +260,7 @@ client.on('message', message => {
 			{ name: 'epikdance', value: 'Makes 2Epik4u Dance' },
 			{ name: 'mjdance', value: 'Shows MJ Dancing', inline: true },
 			{ name: 'hiddencake', value: 'Gives you a free hidden cake!', inline: true },
-			{ name: 'lemondance', value: 'dancing lemon O_O' },
+			{ name: 'poggerdance', value: 'dancing lemon O_O' },
 			{ name: 'ground', value: 'Ground people', inline: true },
 			{ name: 'hiddencake', value: 'Gives you a free hidden cake!', inline: true }
 		)
