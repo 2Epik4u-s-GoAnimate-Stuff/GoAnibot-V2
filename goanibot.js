@@ -279,7 +279,9 @@ client.on('message', message => {
 
 	 
 // make bot say a thing
-if (message.content === "say"){
+client.on('message', message => {
+
+  if (message.content === "say"){
   let text = args.join(" ");
   message.delete();
   message.channel.send(text);
