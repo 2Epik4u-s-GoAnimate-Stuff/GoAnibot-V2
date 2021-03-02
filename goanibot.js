@@ -12,7 +12,7 @@ client.on("ready", () =>{
 // working on banned command
 // client.on('message', message => {
 //	if (message.author.id) === banned.banned 
-// did you mean |ground
+// did you mean |
 // Prefix (|) Website: 2epik4u.tk/goanibot Discord: 2epik4u.tk/2epik4u
 client.on('message', message => {
 	
@@ -166,11 +166,10 @@ client.on('message', message => {
 
 
 
-
 client.on('message', message => {
 	
-	if (message.content === ('|ground')) {
-		if (message.author.id === "569341656449548290")  return;
+	if (message.content.startsWith('|ground')) {
+		if(message.author.id === "569341656449548290")  return;
 		if (message.author.bot) return;
 		  
 	  const user = message.mentions.users.first();
