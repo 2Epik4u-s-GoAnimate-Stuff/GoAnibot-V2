@@ -121,6 +121,25 @@ client.on('message', message => {
 		  message.channel.send(GoEmbed);
 		}
 	  })
+// lemondance
+  	client.on('message', message => {
+
+		if (message.content.toLowerCase().startsWith(config.prefix + "lemondance")) {
+			if(message.author.id === "569341656449548290")  return;
+			const GoEmbed = new Discord.MessageEmbed()
+		  
+			.setTitle('wtf?????????? so scary!!!!! 😭😭😭😭')
+			.attachFiles(['https://cdn.discordapp.com/attachments/799889523231555586/816681680382197770/static-assets-upload6072567890192608323.gif'])
+			.setDescription('ok)
+			
+			// Set the color of the embed
+			.setColor(0xFE0000)
+			// Set the main content of the embed
+	
+		  // Send the embed to the same channel as the message
+		  message.channel.send(GoEmbed);
+		}
+	  })
   
   
   //mj dancing
@@ -260,7 +279,8 @@ client.on('message', message => {
 			{ name: 'epikdance', value: 'Makes 2Epik4u Dance' },
 			{ name: 'mjdance', value: 'Shows MJ Dancing', inline: true },
 			{ name: 'hiddencake', value: 'Gives you a free hidden cake!', inline: true },
-			{ name: 'poggerdance', value: 'dancing lemon O_O' },
+			{ name: 'poggerdance', value: 'dancing pogger man O_O' },
+			{ name: 'lemondance', value: 'dancing lemon man O_O' },
 			{ name: 'ground', value: 'Ground people', inline: true },
 			{ name: 'hiddencake', value: 'Gives you a free hidden cake!', inline: true }
 		)
