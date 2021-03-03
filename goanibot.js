@@ -130,7 +130,7 @@ client.on('message', message => {
 		  
 			.setTitle('wtf?????????? so scary!!!!! 😭😭😭😭')
 			.attachFiles(['https://cdn.discordapp.com/attachments/799889523231555586/816681680382197770/static-assets-upload6072567890192608323.gif'])
-			.setDescription('ok)
+			.setDescription('ok')
 			
 			// Set the color of the embed
 			.setColor(0xFE0000)
