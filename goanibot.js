@@ -292,14 +292,10 @@ client.on('message', message => {
 
 	}
   });
-// if it uses | prefix, then respond
 
-client.on('message', message => {
 
-	if (message.content.startsWith("|")) {
-	message.channel.send('prefix is now "ga " with a space.')
-	
-}
+
+
 
 // respond if pinged
     if (message.author.bot) return false;
