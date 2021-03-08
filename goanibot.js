@@ -306,7 +306,7 @@ client.on('message', message => {
 
     if (message.mentions.has(client.user.id)) {
         message.channel.send('prefix is "ga " with a space.');
- 
+    }
 });
 	 
 // make bot say a thing
