@@ -298,6 +298,8 @@ client.on('message', message => {
 
 
 // respond if pinged
+client.on('message', message => {
+	
     if (message.author.bot) return false;
 
     if (message.content.includes("@here") || message.content.includes("@everyone")) return false;
