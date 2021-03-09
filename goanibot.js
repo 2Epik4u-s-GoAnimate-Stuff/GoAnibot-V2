@@ -121,25 +121,6 @@ client.on('message', message => {
 		  message.channel.send(GoEmbed);
 		}
 	  })
-// lemondance
-  	client.on('message', message => {
-
-		if (message.content.toLowerCase().startsWith(config.prefix + "lemondance")) {
-			if(message.author.id === "569341656449548290")  return;
-			const GoEmbed = new Discord.MessageEmbed()
-		  
-			.setTitle('wtf?????????? so scary!!!!! 😭😭😭😭')
-			.attachFiles(['https://cdn.discordapp.com/attachments/799889523231555586/816681680382197770/static-assets-upload6072567890192608323.gif'])
-			.setDescription('ok')
-			
-			// Set the color of the embed
-			.setColor(0xFE0000)
-			// Set the main content of the embed
-	
-		  // Send the embed to the same channel as the message
-		  message.channel.send(GoEmbed);
-		}
-	  })
   
   
   //mj dancing
@@ -279,8 +260,7 @@ client.on('message', message => {
 			{ name: 'epikdance', value: 'Makes 2Epik4u Dance' },
 			{ name: 'mjdance', value: 'Shows MJ Dancing', inline: true },
 			{ name: 'hiddencake', value: 'Gives you a free hidden cake!', inline: true },
-			{ name: 'poggerdance', value: 'dancing pogger man O_O' },
-			{ name: 'lemondance', value: 'dancing lemon man O_O' },
+			{ name: 'poggerdance', value: 'dancing lemon O_O' },
 			{ name: 'ground', value: 'Ground people', inline: true },
 			{ name: 'hiddencake', value: 'Gives you a free hidden cake!', inline: true }
 		)
@@ -292,28 +272,41 @@ client.on('message', message => {
 
 	}
   });
+// if it uses | prefix, then respond
 
+client.on('message', message => {
 
-
-
+	if (message.content.startsWith("|")) {
+	message.channel.send('prefix is now "ga " with a space.')
+	
+}
 
 // respond if pinged
-client.on('message', message => {
-	
     if (message.author.bot) return false;
 
     if (message.content.includes("@here") || message.content.includes("@everyone")) return false;
 
     if (message.mentions.has(client.user.id)) {
         message.channel.send('prefix is "ga " with a space.');
-    }
+    };
 });
-	 
+client.dispatcher.addInhibitor("message", async message => {
+	if (msg.member.id != "487732747842879493") return false;
+	else 
+	if (message.content.toLowerCase().startsWith(config.prefix + "say")) {		
+        message.channel.send(message.content.slice(4, message.content.length));
+
+	};
+
+	 return(msg.reply("You can't control me!"))
+	
+});
+  	 
 // make bot say a thing
  client.on("message", async message => {
     if (message.author.bot) return;
 	if (message.content.toLowerCase().startsWith(config.prefix + "say")) {		
-        message.channel.send(message.content.slice(6, message.content.length));
+        message.channel.send(message.content.slice(4, message.content.length));
     }
 });
 // bot token login
