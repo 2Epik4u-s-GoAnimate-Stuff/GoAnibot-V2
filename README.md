@@ -1,4 +1,4 @@
-# GoAnibot
+# heroku hosting
 * A GoAnimate Discord bot i made in node.js
 * Most of this code is from discord.js docs and guides
 
