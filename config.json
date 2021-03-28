@@ -1,13 +1,5 @@
 {
-<<<<<<< HEAD
 	"prefix": "ga ",
 	"token": "NjI4NjA3MTkyODA2OTgxNjMy.XZNqEQ.qkoD9l6ttvn0mBqLpqfsKceBsWQ",
-	"status": "ga help"
-	
-=======
-	"token": "ODI1Nzk1MjQyNTY4NzEyMTkz.YGDHwA.drmSEojR3PMy8eNLrOls9o-TrV8",
-	"status": "dev build goanibot",
-	"guild": "733892766957961306"
-
->>>>>>> 7f611dc3178b59342f649945af9060706496348a
+	"status": "ga help
 }
