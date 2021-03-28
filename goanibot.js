@@ -1,19 +1,17 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require('./config.json');
+const WOKCommands = require('wokcommands')
 
-
-
-client.on("ready", () =>{
-	console.log(`Logged in as ${client.user.tag}!`);
-	client.user.setActivity(config.status), { type: 'PLAYING' }
+client.on('ready', () => {
+    new WOKCommands(client, {
+        commandsDir: 'commands',
+        testServers: [config.guild],
+        showWarns: false,
+    })
 })
 
-// working on banned command
-// client.on('message', message => {
-//	if (message.author.id) === banned.banned 
-// did you mean |
-// Prefix (|) Website: 2epik4u.tk/goanibot Discord: 2epik4u.tk/2epik4u
+
 
 
 
