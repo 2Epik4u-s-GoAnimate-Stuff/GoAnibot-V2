@@ -5,7 +5,7 @@ module.exports = {
     testOnly: true,
     description: 'help!!!',
     minArgs: 0,
-    expectedArgs: '1',
+    expectedArgs: '0',
     callback: ({ message, args }) => {
         const embed = new MessageEmbed().setTitle('GoAnibot V2').setColor('RANDOM').setURL('https://discord.com/oauth2/authorize?client_id=628607192806981632&scope=bot&permissions=6041').setAuthor('GoAnibot', 'https://cdn.discordapp.com/attachments/783855479528882236/790600489820880967/goanibot_v2.png', 'https://2epik4u.xyz').setDescription('Welcome to GoAnibot').addFields(
             { name: 'epikdance', value: 'Makes 2Epik4u Dance' },
