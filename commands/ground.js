@@ -12,6 +12,6 @@ module.exports = {
 
         // The content to reply with must be returned from the callback function
         // This is required for slash commands exclusively
-        return `OH OH OH OH OH OH OH ${who} HOW DARE YOU ${reason}. THATS IT, YOUR GROUNDED FOR LIFE. NOW GO TO YOUR ROOM RIGHT NOW!!`
+        return `OH OH OH OH OH OH OH! ${who} HOW DARE YOU ${reason}. THATS IT, YOUR GROUNDED FOR LIFE. NOW GO TO YOUR ROOM RIGHT NOW!!`
     }
 }
