@@ -1,20 +1,17 @@
-﻿require('discord.js')
+﻿const { MessageEmbed } = require('discord.js')
 
 module.exports = {
-    slash: 'both',
-    testOnly: true,
+    slash: true,
+    testOnly: true, // Ensure you have test servers setup, see the above section
     description: 'Ground your enemies (or friends)',
     minArgs: 2,
-    expectedArgs: '<who> <for> <time>',
-    callback: ({ message, args }) => {
-        const [who, reason, time] = args
+    expectedArgs: '<who> <for>',
+    callback: ({ args }) => {
+        // Destructure the name and age from the args array
+        const [who, reason] = args
 
-
-
-        if (message) {
-            message.reply('')
-        }
-
-        return message
-    },
+        // The content to reply with must be returned from the callback function
+        // This is required for slash commands exclusively
+        return `OH OH OH OH OH OH OH ${who} HOW DARE YOU ${reason}. THATS IT, YOUR GROUNDED FOR LIFE. NOW GO TO YOUR ROOM RIGHT NOW!!`
+    }
 }
