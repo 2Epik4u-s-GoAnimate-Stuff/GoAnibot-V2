@@ -6,7 +6,7 @@
   "license": "BSD 3-Clause",
   "private": true,
   "scripts": {
-    "start": "node goanibot.js"
+    "start": "node start.js"
   },
   "main": "start.js",
   "dependencies": {
