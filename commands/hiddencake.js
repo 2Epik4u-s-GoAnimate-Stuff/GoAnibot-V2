@@ -3,7 +3,7 @@ const { MessageEmbed } = require('discord.js')
 module.exports = {
     slash: 'both',
     testOnly: true,
-    description: 'make mj dance (very epik moment)',
+    description: 'Find the hidden cake!',
     minArgs: 0,
     expectedArgs: '0',
     callback: ({ message, args }) => {
