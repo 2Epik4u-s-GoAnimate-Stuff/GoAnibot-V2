@@ -10,8 +10,7 @@
   },
   "main": "goanibot.js",
   "dependencies": {
-    "@discordjs/uws": "^10.149.0",
-    "discord.js": "^12.5.1"
+    "discord.js": "^12.5.3"
   },
   "devDependencies": {},
   "repository": {
