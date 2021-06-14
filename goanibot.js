@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require('./config.json');
+const banned = require('./banned.json');
 
 
-
-client.on("ready", () =>{
+client.on("ready", () =>{ 
 	console.log(`Logged in as ${client.user.tag}!`);
 	client.user.setActivity(config.status), { type: 'PLAYING' }
 })
@@ -32,7 +32,8 @@ client.on('message', message => {
 		// Set the main content of the embed
 
 	  // Send the embed to the same channel as the message
-	  
+
+	  if(message.author.id === banned.banned, banned.banned2)  return message.channel.send("You are banned from GoAnibot.")
 	  message.channel.send(GoEmbed);
 	}
   })
@@ -58,6 +59,7 @@ client.on('message', message => {
 		  // Set the main content of the embed
   
 		// Send the embed to the same channel as the message
+		if(message.author.id === banned.banned, banned.banned2)  return message.channel.send("You are banned from GoAnibot.")
 		message.channel.send(GoEmbed);
 	  }
 	})
@@ -67,7 +69,6 @@ client.on('message', message => {
   client.on('message', message => {
 	  
 	if (message.content.toLowerCase().startsWith(config.prefix + "hiddencake")) {
-		if (message.author.id === "569341656449548290")  return;
   
 		const GoEmbed = new Discord.MessageEmbed()
 		
@@ -79,6 +80,7 @@ client.on('message', message => {
 		  // Set the main content of the embed
   
 		// Send the embed to the same channel as the message
+		if(message.author.id === banned.banned, banned.banned2)  return message.channel.send("You are banned from GoAnibot.")
 		message.channel.send(GoEmbed);
 	  }
 	})
@@ -87,7 +89,6 @@ client.on('message', message => {
 	client.on('message', message => {
 		
 		if (message.content.toLowerCase().startsWith(config.prefix + "epikdance")) {
-		if(message.author.id === "569341656449548290")  return;
   
 		const GoEmbed = new Discord.MessageEmbed()
 		
@@ -100,6 +101,7 @@ client.on('message', message => {
 		  // Set the main content of the embed
   
 		// Send the embed to the same channel as the message
+		if(message.author.id === banned.banned, banned.banned2)  return message.channel.send("You are banned from GoAnibot.")
 		message.channel.send(GoEmbed);
 	  }
 	})
@@ -118,6 +120,7 @@ client.on('message', message => {
 			// Set the main content of the embed
 	
 		  // Send the embed to the same channel as the message
+		  if(message.author.id === banned.banned, banned.banned2)  return message.channel.send("You are banned from GoAnibot.")
 		  message.channel.send(GoEmbed);
 		}
 	  })
@@ -137,6 +140,7 @@ client.on('message', message => {
 			// Set the main content of the embed
 	
 		  // Send the embed to the same channel as the message
+		  if(message.author.id === banned.banned, banned.banned2)  return message.channel.send("You are banned from GoAnibot.")
 		  message.channel.send(GoEmbed);
 		}
 	  })
@@ -145,7 +149,6 @@ client.on('message', message => {
   //mj dancing
   client.on('message', message => {
 	if (message.content.toLowerCase().startsWith(config.prefix + "mjdance")) {
-		if (message.author.id === "569341656449548290")  return;
 		const GoEmbed = new Discord.MessageEmbed()
 		
 		  .setTitle('Woah is that MJ the spirit dancing')
@@ -156,6 +159,7 @@ client.on('message', message => {
 		  // Set the main content of the embed
   
 		// Send the embed to the same channel as the message
+		if(message.author.id === banned.banned, banned.banned2)  return message.channel.send("You are banned from GoAnibot.")
 		message.channel.send(GoEmbed);
 	  }
 	})
@@ -179,6 +183,7 @@ client.on('message', message => {
 		  // Set the main content of the embed
   
 		// Send the embed to the same channel as the message
+		if(message.author.id === banned.banned, banned.banned2)  return message.channel.send("You are banned from GoAnibot.")
 		message.channel.send(GoEmbed);
 	  }
 	})
@@ -190,7 +195,6 @@ client.on('message', message => {
 client.on('message', message => {
 	
 	if (message.content.toLowerCase().startsWith(config.prefix + "ground")) {
-		if(message.author.id === "569341656449548290")  return;
 		if (message.author.bot) return;
 		  
 	  const user = message.mentions.users.first();
@@ -214,6 +218,7 @@ client.on('message', message => {
 		}
 	
 	  } else {
+		if(message.author.id === banned.banned, banned.banned2)  return message.channel.send("You are banned from GoAnibot.")
 		message.reply('mention who you are grounding you cant ground nobody');
 	  }
 	}
@@ -234,6 +239,7 @@ client.on('message', message => {
 
 		message.channel.send(`${user.tag} is ungrounded 😃😃😃`).then(() => {
 
+			if(message.author.id === banned.banned, banned.banned2)  return message.channel.send("You are banned from GoAnibot.")
 		  
 		}).catch(err => {
 
@@ -248,6 +254,7 @@ client.on('message', message => {
   
 	} else {
 	  message.reply('mention who you are ungrounding you cant ground nobody');
+	  
 	}
   }
 });
@@ -288,6 +295,7 @@ client.on('message', message => {
 		.setTimestamp()
 		.setFooter('Made by 2Epik4u', 'https://cdn.discordapp.com/attachments/783855479528882236/790600489820880967/goanibot_v2.png');
 	  // Send the embed to the same channel as the message
+	  if(message.author.id === banned.banned, banned.banned2)  return message.channel.send("You are banned from GoAnibot.")
 	  message.channel.send(GoEmbed);
 
 	}
@@ -313,7 +321,8 @@ client.on('message', message => {
  client.on("message", async message => {
     if (message.author.bot) return;
 	if (message.content.toLowerCase().startsWith(config.prefix + "say")) {		
-        message.channel.send(message.content.slice(6, message.content.length));
+	if(message.author.id === banned.banned, banned.banned2)  return message.channel.send("You are banned from GoAnibot.")
+    message.channel.send(message.content.slice(6, message.content.length));
     }
 });
 // bot token login
