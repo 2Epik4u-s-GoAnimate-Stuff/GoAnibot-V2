@@ -2,7 +2,7 @@
 
 module.exports = {
     slash: true,
-    testOnly: false, // Ensure you have test servers setup, see the above section
+    testOnly: true, // Ensure you have test servers setup, see the above section
     description: 'Ground your enemies (or friends)',
     minArgs: 2,
     expectedArgs: '<user> <for>',

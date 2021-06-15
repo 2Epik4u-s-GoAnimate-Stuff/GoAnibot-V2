@@ -1,8 +1,8 @@
 ﻿const { MessageEmbed } = require('discord.js')
 
 module.exports = {
-    slash: true,
-    testOnly: false,
+    slash: 'both',
+    testOnly: true,
     description: 'make epik dance 😳😳',
     minArgs: 0,
     expectedArgs: '0',
