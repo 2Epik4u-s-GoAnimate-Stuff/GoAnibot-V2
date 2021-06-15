@@ -2,7 +2,7 @@
 
 module.exports = {
     slash: 'both',
-    testOnly: true,
+    testOnly: false,
     description: 'make mj dance (very epik moment)',
     minArgs: 0,
     expectedArgs: '0',

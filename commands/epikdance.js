@@ -2,8 +2,8 @@
 
 module.exports = {
     slash: 'both',
-    testOnly: true,
-    description: 'make epik dance 😳😳',
+    testOnly: false,
+    description: 'make epik dance',
     minArgs: 0,
     expectedArgs: '0',
     callback: ({ message, args }) => {

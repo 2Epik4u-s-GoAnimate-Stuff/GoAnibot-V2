@@ -2,7 +2,7 @@ const { MessageEmbed } = require('discord.js')
 
 module.exports = {
     slash: 'both',
-    testOnly: true,
+    testOnly: false,
     description: 'Find the hidden cake!',
     minArgs: 0,
     expectedArgs: '0',
